@@ -1,0 +1,31 @@
+{
+  "series": [
+    {
+      "id": "hai",
+      "order": 1,
+      "title": "Haï",
+      "heb": "חי",
+      "rtl": false,
+      "sub": "« la vie »",
+      "intro": "Haï — חי — signifie « vivant » dans la tradition hébraïque. Cette série est née d'un dialogue entre la matière et la mémoire : l'acrylique se mêle aux feuilles d'or et aux fragments de textes anciens, comme autant de prières déposées sur la toile. Chaque œuvre célèbre le souffle qui anime toute chose — la lumière qui persiste, la vie qui continue."
+    },
+    {
+      "id": "racine",
+      "order": 2,
+      "title": "Racine & Résilience",
+      "heb": "⟡",
+      "rtl": false,
+      "sub": "racines · mémoire · transmission",
+      "intro": "Racine & Résilience explore ce qui nous tient debout : la mémoire des origines, la transmission silencieuse d'une génération à l'autre. Le ciment, les collages de textes anciens et l'acrylique se superposent comme les strates d'une histoire. De la matière brute naît une douceur tenace — celle des racines qui, malgré tout, continuent de porter."
+    },
+    {
+      "id": "jerusalem",
+      "order": 3,
+      "title": "Si je t'oublie Jérusalem",
+      "heb": "אם אשכחך ירושלים",
+      "rtl": true,
+      "sub": "Psaume 137",
+      "intro": "« Si je t'oublie, Jérusalem… » — ces mots du Psaume 137 traversent la série comme un serment. Le ciment et la matière en relief portent la mémoire d'une ville et d'un peuple ; l'or affleure sous le rouge et le pourpre, telle une lumière qui refuse de s'éteindre. Une promesse gravée dans la matière : ne jamais oublier."
+    }
+  ]
+}

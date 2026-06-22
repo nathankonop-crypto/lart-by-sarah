@@ -1,0 +1,40 @@
+{
+  "brand": "L'art by Sarah",
+  "hero": {
+    "eyebrow": "Galerie de peintures",
+    "title": "L'art by Sarah",
+    "subtitle": "Sarah Konopnicki — peintures abstraites",
+    "lead": "Des toiles abstraites, nées de l'instant, où la couleur, la matière et l'émotion se rencontrent librement. Une collection intime à découvrir — et, peut-être, à faire vôtre.",
+    "cta": "Découvrir la galerie",
+    "image": "images/eclats-de-joie.jpg"
+  },
+  "univers": {
+    "eyebrow": "Mon univers",
+    "text": "J'aime peindre de façon intuitive, en me laissant guider par les couleurs, les textures et les émotions du moment. Mes tableaux sont abstraits, parfois bruts parfois plus doux, mais toujours spontanés. J'aime que chacun y voie ce qu'il veut, selon son propre regard, son propre ressenti. Je vous invite à découvrir mon univers…",
+    "signature": "— Sarah",
+    "image": "images/a-la-lisiere-du-calme.jpg"
+  },
+  "galerie": {
+    "eyebrow": "La galerie",
+    "title": "Les œuvres",
+    "intro": "Chaque toile est une pièce unique. Prix sur demande pour l'ensemble des œuvres."
+  },
+  "seriesSection": {
+    "eyebrow": "Les séries",
+    "title": "Récits en peinture"
+  },
+  "contact": {
+    "eyebrow": "Contact",
+    "title": "Échangeons",
+    "text": "Une œuvre vous touche, vous souhaitez connaître un prix ou simplement échanger ? Écrivez-moi — je réponds avec plaisir."
+  },
+  "footer": {
+    "note": "De nouvelles créations viendront bientôt enrichir cette collection."
+  },
+  "social": {
+    "instagram": "lart_bysarah",
+    "phone": "07 67 10 48 16",
+    "phoneIntl": "+33767104816",
+    "whatsapp": "33767104816"
+  }
+}

@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>L'art by Sarah — Sarah Konopnicki, peintures abstraites</title>
+<meta name="description" content="Galerie de peintures abstraites de Sarah Konopnicki. Des toiles nées de l'instant, où la couleur, la matière et l'émotion se rencontrent librement. Prix sur demande.">
+<meta name="author" content="Sarah Konopnicki">
+<link rel="canonical" href="https://lartbysarah.com/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="L'art by Sarah — Sarah Konopnicki">
+<meta property="og:description" content="Peintures abstraites, nées de l'instant. Une collection intime à découvrir.">
+<meta property="og:image" content="images/eclats-de-joie.jpg">
+<meta property="og:locale" content="fr_FR">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='10' fill='%232B2722'/%3E%3Ctext x='32' y='44' font-family='Georgia,serif' font-size='38' fill='%23C9A55F' text-anchor='middle'%3ES%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Mulish:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#F5F0E6; --bg2:#EEE6D6; --ink:#2B2722; --muted:#6A6052; --muted2:#574F44;
+    --soft:#83796A; --gold:#B08A4F; --gold2:#C9A55F; --terra:#BC7C5B;
+    --dark:#211D18; --dark2:#26211A; --dark3:#1D1914; --cream:#EFE7D6; --cream2:#F3ECDC;
+    --serif:'Cormorant Garamond',Georgia,serif; --sans:'Mulish',system-ui,sans-serif;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+  body{background:var(--bg);color:var(--ink);font-family:var(--sans);font-weight:300;line-height:1.7;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+  img{display:block;max-width:100%}
+  a{color:inherit}
+  ::selection{background:var(--terra);color:#fff}
+  ::placeholder{color:#A99E8C}
+  .wrap{max-width:1240px;margin:0 auto;padding:clamp(56px,8vw,112px) clamp(20px,5vw,64px)}
+  .eyebrow{font-size:12px;font-weight:600;letter-spacing:0.34em;text-transform:uppercase;color:var(--gold)}
+  .serif{font-family:var(--serif)}
+  .btn{display:inline-block;text-decoration:none;background:var(--ink);color:var(--bg);font-size:12px;font-weight:600;letter-spacing:0.2em;text-transform:uppercase;padding:17px 34px;border-radius:2px;border:none;cursor:pointer;transition:background .25s}
+  .btn:hover{background:var(--terra)}
+  .btn-ghost{background:transparent;border:1px solid rgba(43,39,34,0.3);color:var(--ink);font-size:11px;font-weight:600;letter-spacing:0.18em;text-transform:uppercase;padding:11px 20px;border-radius:2px;cursor:pointer;transition:all .22s}
+  .btn-ghost:hover{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+  header{position:sticky;top:0;z-index:50;background:rgba(245,240,230,0.86);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid rgba(43,39,34,0.10);text-align:center;padding:14px 20px}
+  header .brand{display:inline-block;text-decoration:none;color:var(--ink);font-family:var(--serif);font-size:25px;letter-spacing:0.02em;line-height:1.1}
+  header nav{display:flex;flex-wrap:wrap;justify-content:center;gap:8px 26px;margin-top:7px}
+  header nav a{text-decoration:none;color:var(--muted);font-size:11.5px;font-weight:500;letter-spacing:0.22em;text-transform:uppercase;transition:color .2s}
+  header nav a:hover{color:var(--gold)}
+  #accueil .row{display:flex;flex-wrap:wrap;align-items:center;gap:clamp(32px,5vw,72px)}
+  #accueil h1{font-family:var(--serif);font-weight:500;font-size:clamp(3rem,8.5vw,5.6rem);line-height:0.98;letter-spacing:-0.01em;margin:22px 0 18px}
+  #accueil .sub{font-family:var(--serif);font-style:italic;font-size:clamp(1.25rem,2.6vw,1.7rem);color:#8A7F6E;margin-bottom:30px}
+  #accueil p.lead{font-size:clamp(1rem,1.4vw,1.12rem);color:var(--muted2);max-width:30em;margin-bottom:38px}
+  .frame{background:#fff;box-shadow:0 40px 80px -40px rgba(43,39,34,0.55)}
+  #univers{background:var(--bg2)}
+  #univers .row{max-width:1180px;margin:0 auto;display:flex;flex-wrap:wrap;align-items:center;gap:clamp(36px,5vw,80px)}
+  #univers .quote{font-family:var(--serif);font-size:clamp(1.5rem,3vw,2.15rem);line-height:1.34;color:#352F28}
+  #univers .sign{font-family:var(--serif);font-style:italic;font-size:1.4rem;color:var(--gold);margin-top:28px}
+  .section-head{text-align:center;max-width:40em;margin:0 auto clamp(40px,5vw,64px)}
+  .section-head h2{font-family:var(--serif);font-weight:500;font-size:clamp(2.2rem,5vw,3.4rem);line-height:1.05;margin:18px 0}
+  .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:clamp(20px,3vw,40px);align-items:start}
+  figure{margin:0}
+  .card-img{position:relative;background:#fff;box-shadow:0 26px 50px -32px rgba(43,39,34,0.5);cursor:pointer;overflow:hidden}
+  .card-img img{width:100%;height:auto;transition:transform .5s ease}
+  .card-img:hover img{transform:scale(1.04)}
+  .badge-sold{position:absolute;top:14px;left:14px;background:rgba(43,39,34,0.9);color:var(--bg);font-size:10px;font-weight:600;letter-spacing:0.22em;text-transform:uppercase;padding:7px 13px;border-radius:2px}
+  .badge-zoom{position:absolute;bottom:12px;right:12px;background:rgba(43,39,34,0.72);color:var(--bg);font-size:9.5px;font-weight:600;letter-spacing:0.16em;text-transform:uppercase;padding:7px 12px;border-radius:2px;opacity:0;transition:opacity .3s}
+  .card-img:hover .badge-zoom{opacity:1}
+  figcaption{padding:18px 4px 0}
+  figcaption h3{font-family:var(--serif);font-weight:500;font-style:italic;font-size:1.5rem;line-height:1.2}
+  figcaption .meta{font-size:13px;color:var(--soft);margin-top:6px}
+  figcaption .ask{margin-top:14px}
+  #series{background:var(--dark);color:var(--cream)}
+  #series .serie{padding:clamp(64px,8vw,104px) clamp(20px,5vw,64px)}
+  #series .serie.alt{background:var(--dark2);border-top:1px solid rgba(201,165,95,0.26);border-radius:30px 30px 0 0}
+  #series .inner{max-width:1180px;margin:0 auto}
+  #series .serie-art{display:flex;flex-wrap:wrap;align-items:center;gap:clamp(32px,5vw,72px)}
+  #series .serie-text{flex:1 1 320px;min-width:290px}
+  #series .heb{font-family:var(--serif);color:var(--gold2);line-height:1;font-size:clamp(2.6rem,6vw,4.4rem)}
+  #series .heb.rtl{direction:rtl}
+  #series h3{font-family:var(--serif);font-weight:500;font-size:clamp(2rem,4vw,2.8rem);color:var(--cream2);margin:8px 0 4px}
+  #series .serie-sub{font-family:var(--serif);font-style:italic;font-size:1.3rem;color:var(--gold2);margin-bottom:24px}
+  #series .serie-intro{color:#CFC6B5;font-size:1.05rem;max-width:32em}
+  #series .serie-grid{flex:1 1 360px;min-width:290px;display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:clamp(14px,2.4vw,24px)}
+  #series figcaption h3{font-size:1.2rem;color:var(--cream2);margin:0}
+  #series figcaption .meta{color:#9C9382}
+  .btn-ghost-d{background:transparent;border:1px solid rgba(239,231,214,0.3);color:var(--cream);font-size:10.5px;font-weight:600;letter-spacing:0.16em;text-transform:uppercase;padding:9px 16px;border-radius:2px;cursor:pointer;transition:all .22s;margin-top:11px}
+  .btn-ghost-d:hover{background:var(--gold2);color:var(--dark);border-color:var(--gold2)}
+  #contact .row{display:flex;flex-wrap:wrap;gap:clamp(40px,6vw,90px)}
+  #contact h2{font-family:var(--serif);font-weight:500;font-size:clamp(2.2rem,5vw,3.2rem);line-height:1.05;margin:18px 0 20px}
+  .contact-links{display:flex;flex-direction:column;gap:18px}
+  .contact-links a{text-decoration:none;display:flex;align-items:center;gap:14px}
+  .contact-links .ic{width:42px;height:42px;border-radius:50%;border:1px solid rgba(43,39,34,0.2);display:flex;align-items:center;justify-content:center;font-size:18px;color:var(--gold);flex:none;transition:all .2s}
+  .contact-links a:hover .ic{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+  .contact-links .lbl{display:block;font-size:11px;letter-spacing:0.18em;text-transform:uppercase;color:#9A9081}
+  form{display:flex;flex-direction:column;gap:22px;background:#FBF8F1;padding:clamp(26px,4vw,40px);border:1px solid rgba(43,39,34,0.1);border-radius:3px}
+  form label{display:flex;flex-direction:column;gap:9px}
+  form .flabel{font-size:11px;font-weight:600;letter-spacing:0.18em;text-transform:uppercase;color:var(--soft)}
+  form input,form textarea{background:transparent;border:none;border-bottom:1px solid rgba(43,39,34,0.25);padding:9px 2px;font-size:1rem;font-family:inherit;color:inherit;outline:none}
+  form textarea{border:1px solid rgba(43,39,34,0.18);border-radius:3px;padding:12px;resize:vertical;min-height:110px}
+  form input:focus,form textarea:focus{border-color:var(--gold)}
+  .form-note{font-size:12px;color:#9A9081;text-align:center;line-height:1.5}
+  footer{background:var(--bg2);border-top:1px solid rgba(43,39,34,0.1);text-align:center;padding:clamp(44px,6vw,72px) clamp(20px,5vw,64px)}
+  footer .fbrand{font-family:var(--serif);font-size:1.9rem;margin-bottom:10px}
+  footer .fline{font-size:13px;letter-spacing:0.06em;color:var(--soft);margin-bottom:18px}
+  footer .fline a{color:var(--gold);text-decoration:none}
+  footer .fnote{font-family:var(--serif);font-style:italic;font-size:1.25rem;color:var(--muted);max-width:30em;margin:0 auto 26px}
+  footer .copy{font-size:11px;letter-spacing:0.14em;text-transform:uppercase;color:#A99E8C}
+  .lb{position:fixed;inset:0;z-index:100;background:rgba(22,18,15,0.94);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);display:none;align-items:center;justify-content:center;padding:clamp(16px,4vw,52px)}
+  .lb.open{display:flex}
+  .lb-inner{display:flex;flex-wrap:wrap;gap:clamp(22px,3.5vw,52px);max-width:1080px;width:100%;max-height:90vh;align-items:center;justify-content:center;overflow-y:auto}
+  .lb-imgwrap{flex:2 1 320px;min-width:280px;display:flex;justify-content:center}
+  .lb-imgwrap img{max-width:100%;max-height:78vh;height:auto;background:#fff;box-shadow:0 50px 100px -34px rgba(0,0,0,0.85)}
+  .lb-info{flex:1 1 280px;min-width:260px;max-width:430px;color:var(--cream)}
+  .lb-info h3{font-family:var(--serif);font-weight:500;font-size:clamp(2rem,4vw,2.9rem);line-height:1.04;color:#F6EFDF;margin-bottom:14px}
+  .lb-info .meta{font-size:12px;font-weight:600;letter-spacing:0.16em;text-transform:uppercase;color:var(--gold2);margin-bottom:26px}
+  .lb-info .blurb{font-family:var(--serif);font-style:italic;font-size:clamp(1.2rem,2.2vw,1.5rem);line-height:1.5;color:#D8CFBE;margin-bottom:32px}
+  .lb-info .badge-sold{position:static;display:inline-block;background:var(--gold2);color:var(--dark);margin-bottom:20px}
+  .lb-btn{background:var(--cream);color:var(--dark);border:none;font-size:12px;font-weight:600;letter-spacing:0.18em;text-transform:uppercase;padding:15px 30px;border-radius:2px;cursor:pointer;transition:background .25s}
+  .lb-btn:hover{background:var(--gold2)}
+  .lb-x,.lb-nav{position:absolute;border-radius:50%;border:1px solid rgba(239,231,214,0.35);background:rgba(0,0,0,0.25);color:var(--cream);cursor:pointer;line-height:1;transition:all .2s;display:flex;align-items:center;justify-content:center}
+  .lb-x{top:18px;right:20px;width:46px;height:46px;font-size:20px}
+  .lb-nav{top:50%;transform:translateY(-50%);width:50px;height:50px;font-size:26px}
+  .lb-prev{left:clamp(8px,2vw,26px)} .lb-next{right:clamp(8px,2vw,26px)}
+  .lb-x:hover,.lb-nav:hover{background:var(--gold2);color:var(--dark);border-color:var(--gold2)}
+  @media(max-width:560px){.lb-nav{display:none}}
+</style>
+</head>
+<body>
+
+<header>
+  <a href="#accueil" class="brand" id="brand-top">L'art by Sarah</a>
+  <nav>
+    <a href="#univers">Mon univers</a>
+    <a href="#galerie">Galerie</a>
+    <a href="#series">Les séries</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section id="accueil" class="wrap" style="scroll-margin-top:120px">
+  <div class="row">
+    <div style="flex:1 1 340px;min-width:300px">
+      <p class="eyebrow" id="hero-eyebrow"></p>
+      <h1 class="serif" id="hero-title"></h1>
+      <p class="sub" id="hero-sub"></p>
+      <p class="lead" id="hero-lead"></p>
+      <a href="#galerie" class="btn" id="hero-cta"></a>
+    </div>
+    <div style="flex:1 1 380px;min-width:300px">
+      <div class="frame"><img id="hero-img" src="" alt="Toile abstraite de Sarah Konopnicki"></div>
+    </div>
+  </div>
+</section>
+
+<section id="univers" class="wrap" style="scroll-margin-top:96px">
+  <div class="row">
+    <div style="flex:1 1 320px;min-width:280px">
+      <div class="frame"><img id="univers-img" src="" alt="Toile de Sarah Konopnicki"></div>
+    </div>
+    <div style="flex:1 1 360px;min-width:300px">
+      <p class="eyebrow" id="univers-eyebrow"></p>
+      <p class="quote" id="univers-text"></p>
+      <p class="sign" id="univers-sign"></p>
+    </div>
+  </div>
+</section>
+
+<section id="galerie" class="wrap" style="scroll-margin-top:96px">
+  <div class="section-head">
+    <p class="eyebrow" id="gal-eyebrow"></p>
+    <h2 id="gal-title"></h2>
+    <p style="color:var(--muted);font-size:1.02rem" id="gal-intro"></p>
+  </div>
+  <div class="grid" id="galerie-grid"></div>
+</section>
+
+<section id="series" style="scroll-margin-top:0">
+  <div class="serie">
+    <div class="inner">
+      <div class="section-head">
+        <p class="eyebrow" style="color:var(--gold2)" id="series-eyebrow"></p>
+        <h2 style="color:var(--cream2)" id="series-title"></h2>
+      </div>
+      <div id="series-container"></div>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="wrap" style="scroll-margin-top:96px;max-width:1180px">
+  <div class="row">
+    <div style="flex:1 1 340px;min-width:300px">
+      <p class="eyebrow" id="contact-eyebrow"></p>
+      <h2 id="contact-title"></h2>
+      <p style="color:var(--muted2);font-size:1.05rem;max-width:30em;margin-bottom:36px" id="contact-text"></p>
+      <div class="contact-links">
+        <a id="ct-instagram" href="#" target="_blank" rel="noopener">
+          <span class="ic">◎</span><span><span class="lbl">Instagram</span><span style="font-size:1.05rem" id="ct-instagram-h"></span></span>
+        </a>
+        <a id="ct-phone" href="#">
+          <span class="ic">☏</span><span><span class="lbl">Téléphone</span><span style="font-size:1.05rem" id="ct-phone-h"></span></span>
+        </a>
+        <a id="ct-wa" href="#" target="_blank" rel="noopener">
+          <span class="ic" style="color:#5E8A5C">✆</span><span><span class="lbl">WhatsApp</span><span style="font-size:1.05rem">Discuter en direct</span></span>
+        </a>
+      </div>
+    </div>
+    <div style="flex:1 1 360px;min-width:300px">
+      <form id="contact-form">
+        <label><span class="flabel">Votre nom</span><input type="text" id="f-nom" placeholder="Prénom et nom"></label>
+        <label><span class="flabel">Votre email</span><input type="email" id="f-email" placeholder="vous@exemple.fr"></label>
+        <label><span class="flabel">Votre message</span><textarea id="f-msg" rows="4" placeholder="Votre message…"></textarea></label>
+        <button type="submit" class="btn" style="width:100%;padding:17px">Envoyer le message</button>
+        <p class="form-note">L'envoi vous redirige vers WhatsApp pour une réponse plus rapide.</p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p class="fbrand" id="foot-brand">L'art by Sarah</p>
+  <p class="fline" id="foot-line"></p>
+  <p class="fnote" id="foot-note"></p>
+  <p class="copy">© 2026 L'art by Sarah — Tous droits réservés</p>
+</footer>
+
+<div class="lb" id="lb" role="dialog" aria-modal="true" aria-label="Œuvre agrandie">
+  <button class="lb-x" id="lb-x" aria-label="Fermer">✕</button>
+  <button class="lb-nav lb-prev" id="lb-prev" aria-label="Œuvre précédente">‹</button>
+  <button class="lb-nav lb-next" id="lb-next" aria-label="Œuvre suivante">›</button>
+  <div class="lb-inner">
+    <div class="lb-imgwrap"><img id="lb-img" src="" alt=""></div>
+    <div class="lb-info">
+      <span class="badge-sold" id="lb-sold" style="display:none">Vendu</span>
+      <h3 id="lb-title"></h3>
+      <p class="meta" id="lb-meta"></p>
+      <p class="blurb serif" id="lb-blurb"></p>
+      <button class="lb-btn" id="lb-ask">Demander le prix</button>
+    </div>
+  </div>
+</div>
+
+<script>
+let WA = '33767104816';
+let WORKS = [];
+const esc = s => String(s==null?'':s).replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const setText = (id,v) => { const e=document.getElementById(id); if(e&&v!=null) e.textContent=v; };
+const setImg = (id,v) => { const e=document.getElementById(id); if(e&&v) e.src=v; };
+
+function cardHTML(w, i, dark){
+  const sold = w.sold ? `<span class="badge-sold">Vendu</span>` : '';
+  const askCls = dark ? 'btn-ghost-d' : 'btn-ghost ask';
+  return `<figure>
+    <div class="card-img" onclick="openLb(${i})">
+      <img src="${esc(w.image)}" alt="${esc(w.title)}" loading="lazy">
+      ${sold}<span class="badge-zoom">Agrandir ⤢</span>
+    </div>
+    <figcaption>
+      <h3>${esc(w.title)}</h3>
+      <p class="meta">${esc(w.dims)} · ${esc(w.technique)}</p>
+      <button class="${askCls}" onclick="askPrice('${esc(w.title).replace(/'/g,"\\'")}')">Demander le prix</button>
+    </figcaption>
+  </figure>`;
+}
+
+function renderGallery(){
+  document.getElementById('galerie-grid').innerHTML = WORKS.map((w,i)=>cardHTML(w,i,false)).join('');
+}
+function renderSeries(seriesList){
+  const cont = document.getElementById('series-container');
+  const ordered = seriesList.slice().sort((a,b)=>(a.order||0)-(b.order||0));
+  cont.innerHTML = ordered.filter(s=>WORKS.some(w=>w.series===s.id)).map((s,idx)=>{
+    const items = WORKS.map((w,i)=>({w,i})).filter(o=>o.w.series===s.id);
+    const cards = items.map(o=>cardHTML(o.w,o.i,true)).join('');
+    const alt = idx>0 ? 'alt' : '';
+    return `<div class="serie ${alt}"><div class="inner"><div class="serie-art">
+      <div class="serie-text">
+        <span class="heb ${s.rtl?'rtl':''}">${esc(s.heb)}</span>
+        <h3>${esc(s.title)}</h3>
+        <p class="serie-sub">${esc(s.sub)}</p>
+        <p class="serie-intro">${esc(s.intro)}</p>
+      </div>
+      <div class="serie-grid">${cards}</div>
+    </div></div></div>`;
+  }).join('');
+}
+
+let lbIdx = -1;
+function openLb(i){
+  lbIdx = i; const w = WORKS[i];
+  setImg('lb-img', w.image); document.getElementById('lb-img').alt = w.title;
+  setText('lb-title', w.title);
+  setText('lb-meta', w.dims + ' · ' + w.technique);
+  setText('lb-blurb', w.blurb || '');
+  document.getElementById('lb-sold').style.display = w.sold ? 'inline-block' : 'none';
+  document.getElementById('lb').classList.add('open');
+  document.body.style.overflow = 'hidden';
+}
+function closeLb(){ document.getElementById('lb').classList.remove('open'); document.body.style.overflow=''; lbIdx=-1; }
+function stepLb(n){ if(lbIdx<0)return; openLb((lbIdx+n+WORKS.length)%WORKS.length); }
+function askPrice(title){
+  document.getElementById('f-msg').value = `Bonjour Sarah, je serais intéressé(e) par « ${title} ». Pourriez-vous m'indiquer son prix et sa disponibilité ?`;
+  closeLb(); location.hash = '#contact';
+}
+
+document.getElementById('lb').addEventListener('click', e => { if(e.target.id==='lb') closeLb(); });
+document.getElementById('lb-x').onclick = closeLb;
+document.getElementById('lb-prev').onclick = ()=>stepLb(-1);
+document.getElementById('lb-next').onclick = ()=>stepLb(1);
+document.getElementById('lb-ask').onclick = ()=>{ if(lbIdx>=0) askPrice(WORKS[lbIdx].title); };
+document.addEventListener('keydown', e => {
+  if(!document.getElementById('lb').classList.contains('open'))return;
+  if(e.key==='Escape')closeLb(); else if(e.key==='ArrowRight')stepLb(1); else if(e.key==='ArrowLeft')stepLb(-1);
+});
+document.getElementById('contact-form').addEventListener('submit', e => {
+  e.preventDefault();
+  const nom = document.getElementById('f-nom').value.trim();
+  const email = document.getElementById('f-email').value.trim();
+  const body = document.getElementById('f-msg').value.trim() || 'Je vous écris au sujet de vos toiles.';
+  const sig = '\n\n— ' + (nom||'(votre nom)') + (email?' · '+email:'');
+  window.open('https://wa.me/'+WA+'?text='+encodeURIComponent('Bonjour Sarah,\n\n'+body+sig), '_blank');
+});
+
+function applyContent(c){
+  if(!c) return;
+  setText('brand-top', c.brand); setText('foot-brand', c.brand);
+  if(c.hero){ setText('hero-eyebrow',c.hero.eyebrow); setText('hero-title',c.hero.title); setText('hero-sub',c.hero.subtitle); setText('hero-lead',c.hero.lead); setText('hero-cta',c.hero.cta); setImg('hero-img',c.hero.image); }
+  if(c.univers){ setText('univers-eyebrow',c.univers.eyebrow); setText('univers-text',c.univers.text); setText('univers-sign',c.univers.signature); setImg('univers-img',c.univers.image); }
+  if(c.galerie){ setText('gal-eyebrow',c.galerie.eyebrow); setText('gal-title',c.galerie.title); setText('gal-intro',c.galerie.intro); }
+  if(c.seriesSection){ setText('series-eyebrow',c.seriesSection.eyebrow); setText('series-title',c.seriesSection.title); }
+  if(c.contact){ setText('contact-eyebrow',c.contact.eyebrow); setText('contact-title',c.contact.title); setText('contact-text',c.contact.text); }
+  if(c.footer){ setText('foot-note',c.footer.note); }
+  if(c.social){
+    const s=c.social; WA=(s.whatsapp||WA).replace(/\D/g,'');
+    const ig=document.getElementById('ct-instagram'); if(ig){ig.href='https://instagram.com/'+s.instagram;} setText('ct-instagram-h','@'+s.instagram);
+    const ph=document.getElementById('ct-phone'); if(ph){ph.href='tel:'+(s.phoneIntl||'').replace(/\s/g,'');} setText('ct-phone-h',s.phone);
+    const wa=document.getElementById('ct-wa'); if(wa){wa.href='https://wa.me/'+WA;}
+    const fl=document.getElementById('foot-line'); if(fl){fl.innerHTML='Sarah Konopnicki · <a href="https://instagram.com/'+esc(s.instagram)+'" target="_blank" rel="noopener">@'+esc(s.instagram)+'</a>';}
+  }
+}
+
+Promise.all([
+  fetch('content.json').then(r=>r.json()).catch(()=>null),
+  fetch('series.json').then(r=>r.json()).catch(()=>({series:[]})),
+  fetch('works.json').then(r=>r.json()).catch(()=>({works:[]}))
+]).then(([content, seriesData, worksData])=>{
+  applyContent(content);
+  WORKS = (worksData && worksData.works) || [];
+  renderGallery();
+  renderSeries((seriesData && seriesData.series) || []);
+}).catch(()=>{
+  document.getElementById('galerie-grid').innerHTML='<p style="grid-column:1/-1;text-align:center;color:var(--muted)">Le site se charge une fois en ligne.</p>';
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,164 @@
+{
+  "works": [
+    {
+      "id": "ecume-des-jours",
+      "title": "L'écume des jours",
+      "dims": "91 × 153 cm",
+      "technique": "Acrylique",
+      "sold": true,
+      "series": "",
+      "image": "images/ecume-des-jours.jpg",
+      "blurb": "Comme une mer de nuit traversée d'écume, les blancs respirent sur le bleu profond. Un grand format où le mouvement se suspend, et invite au calme."
+    },
+    {
+      "id": "vertige-interieur",
+      "title": "Vertige intérieur",
+      "dims": "80 × 60 cm",
+      "technique": "Acrylique",
+      "sold": false,
+      "series": "",
+      "image": "images/vertige-interieur.jpg",
+      "blurb": "Les couches d'ocre et de noir s'entrechoquent comme une pensée qui tangue. Un vertige doux — celui des émotions qu'on n'ose pas toujours nommer."
+    },
+    {
+      "id": "entre-deux-pulsations",
+      "title": "Entre deux pulsations",
+      "dims": "50 × 70 cm",
+      "technique": "Acrylique",
+      "sold": true,
+      "series": "",
+      "image": "images/entre-deux-pulsations.jpg",
+      "blurb": "Entre deux battements, un souffle suspendu. Le noir s'élance sur le clair comme une calligraphie du vivant."
+    },
+    {
+      "id": "a-la-lisiere-du-calme",
+      "title": "À la lisière du calme",
+      "dims": "80 × 80 cm",
+      "technique": "Acrylique",
+      "sold": false,
+      "series": "",
+      "image": "images/a-la-lisiere-du-calme.jpg",
+      "blurb": "Au bord de l'apaisement, le vert et l'or s'effleurent. Une toile-paysage où l'on s'attarde, juste avant le silence."
+    },
+    {
+      "id": "au-milieu-la-lumiere",
+      "title": "Au milieu, la lumière",
+      "dims": "81 × 54 cm",
+      "technique": "Acrylique",
+      "sold": false,
+      "series": "",
+      "image": "images/au-milieu-la-lumiere.jpg",
+      "blurb": "Au cœur de l'ombre, une ligne d'or trace l'horizon. Rappel que même dans le tumulte, la lumière trouve toujours son chemin."
+    },
+    {
+      "id": "eclats-de-joie",
+      "title": "Éclats de joie",
+      "dims": "60 × 50 cm",
+      "technique": "Acrylique",
+      "sold": false,
+      "series": "",
+      "image": "images/eclats-de-joie.jpg",
+      "blurb": "Une explosion de couleurs franches, sans retenue. La joie pure — celle qui éclate et déborde du cadre."
+    },
+    {
+      "id": "pigments-dailleurs",
+      "title": "Pigments d'ailleurs",
+      "dims": "60 × 60 cm",
+      "technique": "Poudre de Marrakech sur toile",
+      "sold": false,
+      "series": "",
+      "image": "images/pigments-dailleurs.jpg",
+      "blurb": "Née de pigments rapportés de Marrakech, cette toile porte la chaleur d'un ailleurs. Le voyage devient matière, la mémoire devient couleur."
+    },
+    {
+      "id": "vague-en-trois-temps",
+      "title": "Vague en trois temps",
+      "dims": "Triptyque · 3 × 40 × 80 cm",
+      "technique": "Acrylique sur relief",
+      "sold": false,
+      "series": "",
+      "image": "images/vague-en-trois-temps.jpg",
+      "blurb": "En trois panneaux, une vague se déploie et se rejoue. Le relief sous la peinture donne au bleu la profondeur de l'eau."
+    },
+    {
+      "id": "hai-1",
+      "title": "Haï n°1",
+      "dims": "80 × 80 cm",
+      "technique": "Acrylique",
+      "sold": false,
+      "series": "hai",
+      "image": "images/hai-1.jpg",
+      "blurb": "Le mot חי — la vie — affleure sous la matière. Une œuvre brute et lumineuse, comme un mantra déposé sur la toile."
+    },
+    {
+      "id": "hai-2",
+      "title": "Haï n°2",
+      "dims": "60 × 50 cm",
+      "technique": "Acrylique, feuilles d'or et collage de textes hébraïques",
+      "sold": false,
+      "series": "hai",
+      "image": "images/hai-2.jpg",
+      "blurb": "Feuilles d'or et fragments de textes hébraïques composent une prière silencieuse. La vie s'écrit ici en couches de lumière."
+    },
+    {
+      "id": "hai-3",
+      "title": "Haï n°3",
+      "dims": "60 × 50 cm",
+      "technique": "Acrylique",
+      "sold": true,
+      "series": "hai",
+      "image": "images/hai-3.jpg",
+      "blurb": "Sur un bleu vibrant, les lettres d'or de חי s'imposent, pleines et vivantes. Un hymne à l'existence, simple et éclatant."
+    },
+    {
+      "id": "racine-resilience-1",
+      "title": "Racine & Résilience n°1",
+      "dims": "60 × 50 cm",
+      "technique": "Acrylique et collage de textes anciens",
+      "sold": false,
+      "series": "racine",
+      "image": "images/racine-resilience-1.jpg?v=2",
+      "blurb": "« We will dance again » — une promesse murmurée parmi les textes anciens. La mémoire blessée se relève, portée par l'espoir."
+    },
+    {
+      "id": "racine-resilience-2",
+      "title": "Racine & Résilience n°2",
+      "dims": "60 × 50 cm",
+      "technique": "Acrylique et collage de textes anciens",
+      "sold": false,
+      "series": "racine",
+      "image": "images/racine-resilience-2.jpg",
+      "blurb": "Les mots anciens recouvrent toute la surface, serrés comme une histoire qui refuse l'oubli. L'or et le bleu veillent sur la transmission."
+    },
+    {
+      "id": "racine-resilience-3",
+      "title": "Racine & Résilience n°3",
+      "dims": "60 × 50 cm",
+      "technique": "Acrylique",
+      "sold": false,
+      "series": "racine",
+      "image": "images/racine-resilience-3.jpg",
+      "blurb": "Le bleu et le jaune s'entremêlent dans une énergie vive. Sous l'abstraction, la sève qui continue de monter."
+    },
+    {
+      "id": "jerusalem-1",
+      "title": "Si je t'oublie Jérusalem n°1",
+      "dims": "50 × 50 cm",
+      "technique": "Ciment et acrylique",
+      "sold": false,
+      "series": "jerusalem",
+      "image": "images/jerusalem-1.jpg",
+      "blurb": "Le rouge et l'or s'enlacent dans la matière du ciment. Sous la surface, le serment gravé : ne jamais oublier."
+    },
+    {
+      "id": "jerusalem-2",
+      "title": "Si je t'oublie Jérusalem n°2",
+      "dims": "40 × 40 cm",
+      "technique": "Acrylique sur relief",
+      "sold": false,
+      "series": "jerusalem",
+      "image": "images/jerusalem-2.jpg?v=2",
+      "blurb": "Le verset du Psaume 137 s'inscrit en lettres d'or sur le pourpre. Une ville, une promesse, une fidélité qui traverse le temps."
+    }
+  ]
+}
