@@ -16,17 +16,21 @@ collections:
       - name: "works"
         label: "Galerie — toutes les toiles"
         file: "works.json"
-        description: "Cliquez sur « + » pour ajouter une toile, ou sur la corbeille pour en retirer une."
+        description: "Cliquez sur « + » pour ajouter une toile, ou sur la corbeille pour en retirer une. Le français est obligatoire ; anglais et hébreu sont optionnels (sinon le site affiche le français)."
         fields:
           - name: "works"
             label: "Toiles"
             label_singular: "Toile"
             widget: "list"
-            summary: "{{fields.title}}"
+            summary: "{{fields.title.fr}}"
             fields:
               - name: "title"
                 label: "Titre"
-                widget: "string"
+                widget: "object"
+                fields:
+                  - { name: "fr", label: "Français", widget: "string" }
+                  - { name: "en", label: "Anglais", widget: "string", required: false }
+                  - { name: "he", label: "Hébreu", widget: "string", required: false }
               - name: "image"
                 label: "Photo de la toile"
                 widget: "image"
@@ -35,7 +39,11 @@ collections:
                 widget: "string"
               - name: "technique"
                 label: "Technique"
-                widget: "string"
+                widget: "object"
+                fields:
+                  - { name: "fr", label: "Français", widget: "string" }
+                  - { name: "en", label: "Anglais", widget: "string", required: false }
+                  - { name: "he", label: "Hébreu", widget: "string", required: false }
               - name: "sold"
                 label: "Vendue (affiche le badge « Vendu »)"
                 widget: "boolean"
@@ -47,13 +55,16 @@ collections:
                 collection: "series"
                 file: "series"
                 value_field: "series.*.id"
-                search_fields: ["series.*.title"]
-                display_fields: ["series.*.title"]
+                search_fields: ["series.*.title.fr"]
+                display_fields: ["series.*.title.fr"]
                 hint: "Laissez vide si la toile n'appartient à aucune série."
               - name: "blurb"
                 label: "Description (texte affiché en grand quand on agrandit la toile)"
-                widget: "text"
-                required: false
+                widget: "object"
+                fields:
+                  - { name: "fr", label: "Français", widget: "text" }
+                  - { name: "en", label: "Anglais", widget: "text", required: false }
+                  - { name: "he", label: "Hébreu", widget: "text", required: false }
               - name: "id"
                 label: "Identifiant technique (ne pas modifier)"
                 widget: "string"
@@ -71,7 +82,7 @@ collections:
             label: "Séries"
             label_singular: "Série"
             widget: "list"
-            summary: "{{fields.title}}"
+            summary: "{{fields.title.fr}}"
             fields:
               - name: "id"
                 label: "Identifiant (sans espaces ni accents, ex : hai)"
@@ -82,29 +93,39 @@ collections:
                 widget: "number"
                 value_type: "int"
                 default: 1
-              - name: "title"
-                label: "Titre de la série"
-                widget: "string"
               - name: "heb"
-                label: "Texte hébreu ou symbole (optionnel)"
+                label: "Texte hébreu ou symbole affiché en grand (optionnel)"
                 widget: "string"
                 required: false
               - name: "rtl"
-                label: "Texte hébreu écrit de droite à gauche"
+                label: "Ce texte hébreu s'écrit de droite à gauche"
                 widget: "boolean"
                 default: false
+              - name: "title"
+                label: "Titre de la série"
+                widget: "object"
+                fields:
+                  - { name: "fr", label: "Français", widget: "string" }
+                  - { name: "en", label: "Anglais", widget: "string", required: false }
+                  - { name: "he", label: "Hébreu", widget: "string", required: false }
               - name: "sub"
                 label: "Sous-titre"
-                widget: "string"
-                required: false
+                widget: "object"
+                fields:
+                  - { name: "fr", label: "Français", widget: "string", required: false }
+                  - { name: "en", label: "Anglais", widget: "string", required: false }
+                  - { name: "he", label: "Hébreu", widget: "string", required: false }
               - name: "intro"
                 label: "Texte de présentation de la série"
-                widget: "text"
-                required: false
+                widget: "object"
+                fields:
+                  - { name: "fr", label: "Français", widget: "text" }
+                  - { name: "en", label: "Anglais", widget: "text", required: false }
+                  - { name: "he", label: "Hébreu", widget: "text", required: false }
 
   - name: "site"
     label: "Textes du site"
-    description: "Modifier les textes affichés (accueil, mon univers, contact, pied de page)."
+    description: "Modifier les textes affichés. Le français est obligatoire ; anglais et hébreu optionnels."
     files:
       - name: "content"
         label: "Contenu général"
@@ -117,45 +138,141 @@ collections:
             label: "Accueil (haut de page)"
             widget: "object"
             fields:
-              - { name: "eyebrow", label: "Petit titre au-dessus", widget: "string" }
-              - { name: "title", label: "Grand titre", widget: "string" }
-              - { name: "subtitle", label: "Sous-titre", widget: "string" }
-              - { name: "lead", label: "Texte d'introduction", widget: "text" }
-              - { name: "cta", label: "Texte du bouton", widget: "string" }
+              - name: "eyebrow"
+                label: "Petit titre au-dessus"
+                widget: "object"
+                fields:
+                  - { name: "fr", label: "Français", widget: "string" }
+                  - { name: "en", label: "Anglais", widget: "string", required: false }
+                  - { name: "he", label: "Hébreu", widget: "string", required: false }
+              - { name: "title", label: "Grand titre (nom)", widget: "string" }
+              - name: "subtitle"
+                label: "Sous-titre"
+                widget: "object"
+                fields:
+                  - { name: "fr", label: "Français", widget: "string" }
+                  - { name: "en", label: "Anglais", widget: "string", required: false }
+                  - { name: "he", label: "Hébreu", widget: "string", required: false }
+              - name: "lead"
+                label: "Texte d'introduction"
+                widget: "object"
+                fields:
+                  - { name: "fr", label: "Français", widget: "text" }
+                  - { name: "en", label: "Anglais", widget: "text", required: false }
+                  - { name: "he", label: "Hébreu", widget: "text", required: false }
+              - name: "cta"
+                label: "Texte du bouton"
+                widget: "object"
+                fields:
+                  - { name: "fr", label: "Français", widget: "string" }
+                  - { name: "en", label: "Anglais", widget: "string", required: false }
+                  - { name: "he", label: "Hébreu", widget: "string", required: false }
               - { name: "image", label: "Photo d'accueil", widget: "image" }
           - name: "univers"
             label: "Mon univers"
             widget: "object"
             fields:
-              - { name: "eyebrow", label: "Petit titre", widget: "string" }
-              - { name: "text", label: "Texte", widget: "text" }
-              - { name: "signature", label: "Signature", widget: "string" }
+              - name: "eyebrow"
+                label: "Petit titre"
+                widget: "object"
+                fields:
+                  - { name: "fr", label: "Français", widget: "string" }
+                  - { name: "en", label: "Anglais", widget: "string", required: false }
+                  - { name: "he", label: "Hébreu", widget: "string", required: false }
+              - name: "text"
+                label: "Texte"
+                widget: "object"
+                fields:
+                  - { name: "fr", label: "Français", widget: "text" }
+                  - { name: "en", label: "Anglais", widget: "text", required: false }
+                  - { name: "he", label: "Hébreu", widget: "text", required: false }
+              - name: "signature"
+                label: "Signature"
+                widget: "object"
+                fields:
+                  - { name: "fr", label: "Français", widget: "string" }
+                  - { name: "en", label: "Anglais", widget: "string", required: false }
+                  - { name: "he", label: "Hébreu", widget: "string", required: false }
               - { name: "image", label: "Photo", widget: "image" }
           - name: "galerie"
             label: "Galerie (en-tête)"
             widget: "object"
             fields:
-              - { name: "eyebrow", label: "Petit titre", widget: "string" }
-              - { name: "title", label: "Titre", widget: "string" }
-              - { name: "intro", label: "Texte d'introduction", widget: "string" }
+              - name: "eyebrow"
+                label: "Petit titre"
+                widget: "object"
+                fields:
+                  - { name: "fr", label: "Français", widget: "string" }
+                  - { name: "en", label: "Anglais", widget: "string", required: false }
+                  - { name: "he", label: "Hébreu", widget: "string", required: false }
+              - name: "title"
+                label: "Titre"
+                widget: "object"
+                fields:
+                  - { name: "fr", label: "Français", widget: "string" }
+                  - { name: "en", label: "Anglais", widget: "string", required: false }
+                  - { name: "he", label: "Hébreu", widget: "string", required: false }
+              - name: "intro"
+                label: "Texte d'introduction"
+                widget: "object"
+                fields:
+                  - { name: "fr", label: "Français", widget: "text" }
+                  - { name: "en", label: "Anglais", widget: "text", required: false }
+                  - { name: "he", label: "Hébreu", widget: "text", required: false }
           - name: "seriesSection"
             label: "Séries (en-tête de la section)"
             widget: "object"
             fields:
-              - { name: "eyebrow", label: "Petit titre", widget: "string" }
-              - { name: "title", label: "Titre", widget: "string" }
+              - name: "eyebrow"
+                label: "Petit titre"
+                widget: "object"
+                fields:
+                  - { name: "fr", label: "Français", widget: "string" }
+                  - { name: "en", label: "Anglais", widget: "string", required: false }
+                  - { name: "he", label: "Hébreu", widget: "string", required: false }
+              - name: "title"
+                label: "Titre"
+                widget: "object"
+                fields:
+                  - { name: "fr", label: "Français", widget: "string" }
+                  - { name: "en", label: "Anglais", widget: "string", required: false }
+                  - { name: "he", label: "Hébreu", widget: "string", required: false }
           - name: "contact"
             label: "Contact"
             widget: "object"
             fields:
-              - { name: "eyebrow", label: "Petit titre", widget: "string" }
-              - { name: "title", label: "Titre", widget: "string" }
-              - { name: "text", label: "Texte", widget: "text" }
+              - name: "eyebrow"
+                label: "Petit titre"
+                widget: "object"
+                fields:
+                  - { name: "fr", label: "Français", widget: "string" }
+                  - { name: "en", label: "Anglais", widget: "string", required: false }
+                  - { name: "he", label: "Hébreu", widget: "string", required: false }
+              - name: "title"
+                label: "Titre"
+                widget: "object"
+                fields:
+                  - { name: "fr", label: "Français", widget: "string" }
+                  - { name: "en", label: "Anglais", widget: "string", required: false }
+                  - { name: "he", label: "Hébreu", widget: "string", required: false }
+              - name: "text"
+                label: "Texte"
+                widget: "object"
+                fields:
+                  - { name: "fr", label: "Français", widget: "text" }
+                  - { name: "en", label: "Anglais", widget: "text", required: false }
+                  - { name: "he", label: "Hébreu", widget: "text", required: false }
           - name: "footer"
             label: "Pied de page"
             widget: "object"
             fields:
-              - { name: "note", label: "Phrase de bas de page", widget: "text" }
+              - name: "note"
+                label: "Phrase de bas de page"
+                widget: "object"
+                fields:
+                  - { name: "fr", label: "Français", widget: "text" }
+                  - { name: "en", label: "Anglais", widget: "text", required: false }
+                  - { name: "he", label: "Hébreu", widget: "text", required: false }
           - name: "social"
             label: "Coordonnées"
             widget: "object"

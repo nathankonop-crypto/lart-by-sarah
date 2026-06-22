@@ -3,29 +3,41 @@
     {
       "id": "hai",
       "order": 1,
-      "title": "Haï",
       "heb": "חי",
       "rtl": false,
-      "sub": "« la vie »",
-      "intro": "Haï — חי — signifie « vivant » dans la tradition hébraïque. Cette série est née d'un dialogue entre la matière et la mémoire : l'acrylique se mêle aux feuilles d'or et aux fragments de textes anciens, comme autant de prières déposées sur la toile. Chaque œuvre célèbre le souffle qui anime toute chose — la lumière qui persiste, la vie qui continue."
+      "title": { "fr": "Haï", "en": "Haï", "he": "חי" },
+      "sub": { "fr": "« la vie »", "en": "“life”", "he": "“החיים”" },
+      "intro": {
+        "fr": "Haï — חי — signifie « vivant » dans la tradition hébraïque. Cette série est née d'un dialogue entre la matière et la mémoire : l'acrylique se mêle aux feuilles d'or et aux fragments de textes anciens, comme autant de prières déposées sur la toile. Chaque œuvre célèbre le souffle qui anime toute chose — la lumière qui persiste, la vie qui continue.",
+        "en": "Haï — חי — means “alive” in the Hebrew tradition. This series was born from a dialogue between matter and memory: acrylic blends with gold leaf and fragments of ancient texts, like so many prayers laid upon the canvas. Each work celebrates the breath that animates all things — the light that endures, the life that goes on.",
+        "he": "חי — פירושו “חי” במסורת היהודית. הסדרה הזו נולדה מתוך דו-שיח בין החומר לזיכרון: האקריליק מתמזג עם עלי זהב ועם שברי טקסטים עתיקים, כתפילות המונחות על הבד. כל יצירה חוגגת את הנשימה שמחיה כל דבר — האור שמתמיד, החיים שנמשכים."
+      }
     },
     {
       "id": "racine",
       "order": 2,
-      "title": "Racine & Résilience",
       "heb": "⟡",
       "rtl": false,
-      "sub": "racines · mémoire · transmission",
-      "intro": "Racine & Résilience explore ce qui nous tient debout : la mémoire des origines, la transmission silencieuse d'une génération à l'autre. Le ciment, les collages de textes anciens et l'acrylique se superposent comme les strates d'une histoire. De la matière brute naît une douceur tenace — celle des racines qui, malgré tout, continuent de porter."
+      "title": { "fr": "Racine & Résilience", "en": "Roots & Resilience", "he": "שורשים וחוסן" },
+      "sub": { "fr": "racines · mémoire · transmission", "en": "roots · memory · transmission", "he": "שורשים · זיכרון · מסירה" },
+      "intro": {
+        "fr": "Racine & Résilience explore ce qui nous tient debout : la mémoire des origines, la transmission silencieuse d'une génération à l'autre. Le ciment, les collages de textes anciens et l'acrylique se superposent comme les strates d'une histoire. De la matière brute naît une douceur tenace — celle des racines qui, malgré tout, continuent de porter.",
+        "en": "Roots & Resilience explores what keeps us standing: the memory of our origins, the silent transmission from one generation to the next. Cement, collages of ancient texts and acrylic layer up like the strata of a story. From raw matter a tenacious gentleness is born — that of roots which, despite everything, keep on carrying us.",
+        "he": "“שורשים וחוסן” חוקרת את מה שמעמיד אותנו: זיכרון המקור, המסירה השקטה מדור לדור. המלט, הקולאז'ים של טקסטים עתיקים והאקריליק נערמים כשכבות של סיפור. מתוך החומר הגולמי נולדת רכות עיקשת — זו של השורשים אשר, למרות הכול, ממשיכים לשאת."
+      }
     },
     {
       "id": "jerusalem",
       "order": 3,
-      "title": "Si je t'oublie Jérusalem",
       "heb": "אם אשכחך ירושלים",
       "rtl": true,
-      "sub": "Psaume 137",
-      "intro": "« Si je t'oublie, Jérusalem… » — ces mots du Psaume 137 traversent la série comme un serment. Le ciment et la matière en relief portent la mémoire d'une ville et d'un peuple ; l'or affleure sous le rouge et le pourpre, telle une lumière qui refuse de s'éteindre. Une promesse gravée dans la matière : ne jamais oublier."
+      "title": { "fr": "Si je t'oublie Jérusalem", "en": "If I Forget You, Jerusalem", "he": "אם אשכחך ירושלים" },
+      "sub": { "fr": "Psaume 137", "en": "Psalm 137", "he": "תהילים קל״ז" },
+      "intro": {
+        "fr": "« Si je t'oublie, Jérusalem… » — ces mots du Psaume 137 traversent la série comme un serment. Le ciment et la matière en relief portent la mémoire d'une ville et d'un peuple ; l'or affleure sous le rouge et le pourpre, telle une lumière qui refuse de s'éteindre. Une promesse gravée dans la matière : ne jamais oublier.",
+        "en": "“If I forget you, Jerusalem…” — these words from Psalm 137 run through the series like an oath. Cement and raised matter carry the memory of a city and a people; gold surfaces beneath the red and the purple, like a light that refuses to go out. A promise engraved in matter: never to forget.",
+        "he": "“אם אשכחך ירושלים…” — מילים אלו מתהילים קל״ז עוברות כחוט בסדרה כמו שבועה. המלט והחומר הבולט נושאים את זיכרונם של עיר ועם; הזהב מבצבץ מתחת לאדום ולארגמן, כאור שמסרב לכבות. הבטחה החקוקה בחומר: לא לשכוח לעולם."
+      }
     }
   ]
 }

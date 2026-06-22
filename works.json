@@ -2,163 +2,227 @@
   "works": [
     {
       "id": "ecume-des-jours",
-      "title": "L'écume des jours",
+      "title": { "fr": "L'écume des jours", "en": "The Froth of Days", "he": "קצף הימים" },
       "dims": "91 × 153 cm",
-      "technique": "Acrylique",
+      "technique": { "fr": "Acrylique", "en": "Acrylic", "he": "אקריליק" },
       "sold": true,
       "series": "",
       "image": "images/ecume-des-jours.jpg",
-      "blurb": "Comme une mer de nuit traversée d'écume, les blancs respirent sur le bleu profond. Un grand format où le mouvement se suspend, et invite au calme."
+      "blurb": {
+        "fr": "Comme une mer de nuit traversée d'écume, les blancs respirent sur le bleu profond. Un grand format où le mouvement se suspend, et invite au calme.",
+        "en": "Like a sea of night streaked with foam, the whites breathe upon the deep blue. A large format where movement hangs suspended, and invites to calm.",
+        "he": "כמו ים לילי חרוש קצף, הלבנים נושמים על הכחול העמוק. פורמט גדול שבו התנועה נעצרת, ומזמינה לרוגע."
+      }
     },
     {
       "id": "vertige-interieur",
-      "title": "Vertige intérieur",
+      "title": { "fr": "Vertige intérieur", "en": "Inner Vertigo", "he": "סחרחורת פנימית" },
       "dims": "80 × 60 cm",
-      "technique": "Acrylique",
+      "technique": { "fr": "Acrylique", "en": "Acrylic", "he": "אקריליק" },
       "sold": false,
       "series": "",
       "image": "images/vertige-interieur.jpg",
-      "blurb": "Les couches d'ocre et de noir s'entrechoquent comme une pensée qui tangue. Un vertige doux — celui des émotions qu'on n'ose pas toujours nommer."
+      "blurb": {
+        "fr": "Les couches d'ocre et de noir s'entrechoquent comme une pensée qui tangue. Un vertige doux — celui des émotions qu'on n'ose pas toujours nommer.",
+        "en": "Layers of ochre and black collide like a reeling thought. A gentle vertigo — that of the emotions we don't always dare to name.",
+        "he": "שכבות של אוקר ושחור מתנגשות כמחשבה מיטלטלת. סחרחורת רכה — זו של הרגשות שלא תמיד מעזים לקרוא בשמם."
+      }
     },
     {
       "id": "entre-deux-pulsations",
-      "title": "Entre deux pulsations",
+      "title": { "fr": "Entre deux pulsations", "en": "Between Two Heartbeats", "he": "בין שתי פעימות" },
       "dims": "50 × 70 cm",
-      "technique": "Acrylique",
+      "technique": { "fr": "Acrylique", "en": "Acrylic", "he": "אקריליק" },
       "sold": true,
       "series": "",
       "image": "images/entre-deux-pulsations.jpg",
-      "blurb": "Entre deux battements, un souffle suspendu. Le noir s'élance sur le clair comme une calligraphie du vivant."
+      "blurb": {
+        "fr": "Entre deux battements, un souffle suspendu. Le noir s'élance sur le clair comme une calligraphie du vivant.",
+        "en": "Between two beats, a suspended breath. The black surges across the light like a calligraphy of the living.",
+        "he": "בין שתי פעימות, נשימה עצורה. השחור מזנק על הבהיר כמו קליגרפיה של החי."
+      }
     },
     {
       "id": "a-la-lisiere-du-calme",
-      "title": "À la lisière du calme",
+      "title": { "fr": "À la lisière du calme", "en": "At the Edge of Calm", "he": "בשולי השלווה" },
       "dims": "80 × 80 cm",
-      "technique": "Acrylique",
+      "technique": { "fr": "Acrylique", "en": "Acrylic", "he": "אקריליק" },
       "sold": false,
       "series": "",
       "image": "images/a-la-lisiere-du-calme.jpg",
-      "blurb": "Au bord de l'apaisement, le vert et l'or s'effleurent. Une toile-paysage où l'on s'attarde, juste avant le silence."
+      "blurb": {
+        "fr": "Au bord de l'apaisement, le vert et l'or s'effleurent. Une toile-paysage où l'on s'attarde, juste avant le silence.",
+        "en": "On the verge of appeasement, green and gold brush against each other. A landscape-canvas where one lingers, just before the silence.",
+        "he": "על סף ההשתקטות, הירוק והזהב נושקים זה לזה. בד-נוף שבו מתעכבים, רגע לפני הדממה."
+      }
     },
     {
       "id": "au-milieu-la-lumiere",
-      "title": "Au milieu, la lumière",
+      "title": { "fr": "Au milieu, la lumière", "en": "In the Midst, the Light", "he": "במרכז, האור" },
       "dims": "81 × 54 cm",
-      "technique": "Acrylique",
+      "technique": { "fr": "Acrylique", "en": "Acrylic", "he": "אקריליק" },
       "sold": false,
       "series": "",
       "image": "images/au-milieu-la-lumiere.jpg",
-      "blurb": "Au cœur de l'ombre, une ligne d'or trace l'horizon. Rappel que même dans le tumulte, la lumière trouve toujours son chemin."
+      "blurb": {
+        "fr": "Au cœur de l'ombre, une ligne d'or trace l'horizon. Rappel que même dans le tumulte, la lumière trouve toujours son chemin.",
+        "en": "At the heart of the shadow, a line of gold traces the horizon. A reminder that even in turmoil, light always finds its way.",
+        "he": "בלב הצל, קו של זהב משרטט את האופק. תזכורת שגם במהומה, האור תמיד מוצא את דרכו."
+      }
     },
     {
       "id": "eclats-de-joie",
-      "title": "Éclats de joie",
+      "title": { "fr": "Éclats de joie", "en": "Bursts of Joy", "he": "רסיסי שמחה" },
       "dims": "60 × 50 cm",
-      "technique": "Acrylique",
+      "technique": { "fr": "Acrylique", "en": "Acrylic", "he": "אקריליק" },
       "sold": false,
       "series": "",
       "image": "images/eclats-de-joie.jpg",
-      "blurb": "Une explosion de couleurs franches, sans retenue. La joie pure — celle qui éclate et déborde du cadre."
+      "blurb": {
+        "fr": "Une explosion de couleurs franches, sans retenue. La joie pure — celle qui éclate et déborde du cadre.",
+        "en": "An explosion of frank, unrestrained colours. Pure joy — the kind that bursts out and overflows the frame.",
+        "he": "התפרצות של צבעים כנים, חסרי מעצורים. שמחה טהורה — מן הסוג שמתפרץ וגולש מן המסגרת."
+      }
     },
     {
       "id": "pigments-dailleurs",
-      "title": "Pigments d'ailleurs",
+      "title": { "fr": "Pigments d'ailleurs", "en": "Pigments from Elsewhere", "he": "פיגמנטים ממרחקים" },
       "dims": "60 × 60 cm",
-      "technique": "Poudre de Marrakech sur toile",
+      "technique": { "fr": "Poudre de Marrakech sur toile", "en": "Marrakech pigment on canvas", "he": "אבקת מרקש על בד" },
       "sold": false,
       "series": "",
       "image": "images/pigments-dailleurs.jpg",
-      "blurb": "Née de pigments rapportés de Marrakech, cette toile porte la chaleur d'un ailleurs. Le voyage devient matière, la mémoire devient couleur."
+      "blurb": {
+        "fr": "Née de pigments rapportés de Marrakech, cette toile porte la chaleur d'un ailleurs. Le voyage devient matière, la mémoire devient couleur.",
+        "en": "Born of pigments brought back from Marrakech, this canvas carries the warmth of an elsewhere. The journey becomes matter, memory becomes colour.",
+        "he": "נולד מאבקות שהובאו ממרקש, הבד הזה נושא את חום המרחק. המסע הופך לחומר, הזיכרון הופך לצבע."
+      }
     },
     {
       "id": "vague-en-trois-temps",
-      "title": "Vague en trois temps",
-      "dims": "Triptyque · 3 × 40 × 80 cm",
-      "technique": "Acrylique sur relief",
+      "title": { "fr": "Vague en trois temps", "en": "Wave in Three Movements", "he": "גל בשלושה פרקים" },
+      "dims": "3 × 40 × 80 cm",
+      "technique": { "fr": "Triptyque · acrylique sur relief", "en": "Triptych · acrylic on relief", "he": "טריפטיכון · אקריליק על תבליט" },
       "sold": false,
       "series": "",
       "image": "images/vague-en-trois-temps.jpg",
-      "blurb": "En trois panneaux, une vague se déploie et se rejoue. Le relief sous la peinture donne au bleu la profondeur de l'eau."
+      "blurb": {
+        "fr": "En trois panneaux, une vague se déploie et se rejoue. Le relief sous la peinture donne au bleu la profondeur de l'eau.",
+        "en": "In three panels, a wave unfurls and replays itself. The relief beneath the paint gives the blue the depth of water.",
+        "he": "בשלושה לוחות, גל נפרש ומנגן את עצמו מחדש. התבליט שמתחת לצבע מעניק לכחול את עומק המים."
+      }
     },
     {
       "id": "hai-1",
-      "title": "Haï n°1",
+      "title": { "fr": "Haï n°1", "en": "Haï no. 1", "he": "חי מס׳ 1" },
       "dims": "80 × 80 cm",
-      "technique": "Acrylique",
+      "technique": { "fr": "Acrylique", "en": "Acrylic", "he": "אקריליק" },
       "sold": false,
       "series": "hai",
       "image": "images/hai-1.jpg",
-      "blurb": "Le mot חי — la vie — affleure sous la matière. Une œuvre brute et lumineuse, comme un mantra déposé sur la toile."
+      "blurb": {
+        "fr": "Le mot חי — la vie — affleure sous la matière. Une œuvre brute et lumineuse, comme un mantra déposé sur la toile.",
+        "en": "The word חי — life — surfaces beneath the matter. A raw and luminous work, like a mantra laid upon the canvas.",
+        "he": "המילה חי עולה מתחת לחומר. יצירה גולמית ומוארת, כמו מנטרה המונחת על הבד."
+      }
     },
     {
       "id": "hai-2",
-      "title": "Haï n°2",
+      "title": { "fr": "Haï n°2", "en": "Haï no. 2", "he": "חי מס׳ 2" },
       "dims": "60 × 50 cm",
-      "technique": "Acrylique, feuilles d'or et collage de textes hébraïques",
+      "technique": { "fr": "Acrylique, feuilles d'or et collage de textes hébraïques", "en": "Acrylic, gold leaf and collage of Hebrew texts", "he": "אקריליק, עלי זהב וקולאז׳ של טקסטים עבריים" },
       "sold": false,
       "series": "hai",
       "image": "images/hai-2.jpg",
-      "blurb": "Feuilles d'or et fragments de textes hébraïques composent une prière silencieuse. La vie s'écrit ici en couches de lumière."
+      "blurb": {
+        "fr": "Feuilles d'or et fragments de textes hébraïques composent une prière silencieuse. La vie s'écrit ici en couches de lumière.",
+        "en": "Gold leaf and fragments of Hebrew texts compose a silent prayer. Life is written here in layers of light.",
+        "he": "עלי זהב ושברי טקסטים עבריים מרכיבים תפילה שקטה. החיים נכתבים כאן בשכבות של אור."
+      }
     },
     {
       "id": "hai-3",
-      "title": "Haï n°3",
+      "title": { "fr": "Haï n°3", "en": "Haï no. 3", "he": "חי מס׳ 3" },
       "dims": "60 × 50 cm",
-      "technique": "Acrylique",
+      "technique": { "fr": "Acrylique", "en": "Acrylic", "he": "אקריליק" },
       "sold": true,
       "series": "hai",
       "image": "images/hai-3.jpg",
-      "blurb": "Sur un bleu vibrant, les lettres d'or de חי s'imposent, pleines et vivantes. Un hymne à l'existence, simple et éclatant."
+      "blurb": {
+        "fr": "Sur un bleu vibrant, les lettres d'or de חי s'imposent, pleines et vivantes. Un hymne à l'existence, simple et éclatant.",
+        "en": "On a vibrant blue, the golden letters of חי stand full and alive. A hymn to existence, simple and radiant.",
+        "he": "על כחול תוסס, אותיות הזהב של חי ניצבות מלאות וחיות. מזמור לקיום, פשוט וזוהר."
+      }
     },
     {
       "id": "racine-resilience-1",
-      "title": "Racine & Résilience n°1",
+      "title": { "fr": "Racine & Résilience n°1", "en": "Roots & Resilience no. 1", "he": "שורשים וחוסן מס׳ 1" },
       "dims": "60 × 50 cm",
-      "technique": "Acrylique et collage de textes anciens",
+      "technique": { "fr": "Acrylique et collage de textes anciens", "en": "Acrylic and collage of ancient texts", "he": "אקריליק וקולאז׳ של טקסטים עתיקים" },
       "sold": false,
       "series": "racine",
-      "image": "images/racine-resilience-1.jpg?v=2",
-      "blurb": "« We will dance again » — une promesse murmurée parmi les textes anciens. La mémoire blessée se relève, portée par l'espoir."
+      "image": "images/racine-resilience-1.jpg",
+      "blurb": {
+        "fr": "« We will dance again » — une promesse murmurée parmi les textes anciens. La mémoire blessée se relève, portée par l'espoir.",
+        "en": "“We will dance again” — a promise whispered among the ancient texts. Wounded memory rises again, carried by hope.",
+        "he": "“We will dance again” — הבטחה הנלחשת בין הטקסטים העתיקים. הזיכרון הפצוע קם מחדש, נישא על כנפי התקווה."
+      }
     },
     {
       "id": "racine-resilience-2",
-      "title": "Racine & Résilience n°2",
+      "title": { "fr": "Racine & Résilience n°2", "en": "Roots & Resilience no. 2", "he": "שורשים וחוסן מס׳ 2" },
       "dims": "60 × 50 cm",
-      "technique": "Acrylique et collage de textes anciens",
+      "technique": { "fr": "Acrylique et collage de textes anciens", "en": "Acrylic and collage of ancient texts", "he": "אקריליק וקולאז׳ של טקסטים עתיקים" },
       "sold": false,
       "series": "racine",
       "image": "images/racine-resilience-2.jpg",
-      "blurb": "Les mots anciens recouvrent toute la surface, serrés comme une histoire qui refuse l'oubli. L'or et le bleu veillent sur la transmission."
+      "blurb": {
+        "fr": "Les mots anciens recouvrent toute la surface, serrés comme une histoire qui refuse l'oubli. L'or et le bleu veillent sur la transmission.",
+        "en": "The ancient words cover the whole surface, packed tight like a story that refuses to be forgotten. Gold and blue watch over the transmission.",
+        "he": "המילים העתיקות מכסות את כל פני השטח, צפופות כמו סיפור שמסרב להישכח. הזהב והכחול שומרים על המסירה."
+      }
     },
     {
       "id": "racine-resilience-3",
-      "title": "Racine & Résilience n°3",
+      "title": { "fr": "Racine & Résilience n°3", "en": "Roots & Resilience no. 3", "he": "שורשים וחוסן מס׳ 3" },
       "dims": "60 × 50 cm",
-      "technique": "Acrylique",
+      "technique": { "fr": "Acrylique", "en": "Acrylic", "he": "אקריליק" },
       "sold": false,
       "series": "racine",
       "image": "images/racine-resilience-3.jpg",
-      "blurb": "Le bleu et le jaune s'entremêlent dans une énergie vive. Sous l'abstraction, la sève qui continue de monter."
+      "blurb": {
+        "fr": "Le bleu et le jaune s'entremêlent dans une énergie vive. Sous l'abstraction, la sève qui continue de monter.",
+        "en": "Blue and yellow intertwine in a vivid energy. Beneath the abstraction, the sap that keeps on rising.",
+        "he": "כחול וצהוב נשזרים באנרגיה תוססת. מתחת להפשטה, הלשד שממשיך לעלות."
+      }
     },
     {
       "id": "jerusalem-1",
-      "title": "Si je t'oublie Jérusalem n°1",
+      "title": { "fr": "Si je t'oublie Jérusalem n°1", "en": "If I Forget You, Jerusalem no. 1", "he": "אם אשכחך ירושלים מס׳ 1" },
       "dims": "50 × 50 cm",
-      "technique": "Ciment et acrylique",
+      "technique": { "fr": "Ciment et acrylique", "en": "Cement and acrylic", "he": "מלט ואקריליק" },
       "sold": false,
       "series": "jerusalem",
       "image": "images/jerusalem-1.jpg",
-      "blurb": "Le rouge et l'or s'enlacent dans la matière du ciment. Sous la surface, le serment gravé : ne jamais oublier."
+      "blurb": {
+        "fr": "Le rouge et l'or s'enlacent dans la matière du ciment. Sous la surface, le serment gravé : ne jamais oublier.",
+        "en": "Red and gold embrace within the matter of the cement. Beneath the surface, the oath engraved: never to forget.",
+        "he": "אדום וזהב משתלבים בחומר המלט. מתחת לפני השטח, השבועה החקוקה: לא לשכוח לעולם."
+      }
     },
     {
       "id": "jerusalem-2",
-      "title": "Si je t'oublie Jérusalem n°2",
+      "title": { "fr": "Si je t'oublie Jérusalem n°2", "en": "If I Forget You, Jerusalem no. 2", "he": "אם אשכחך ירושלים מס׳ 2" },
       "dims": "40 × 40 cm",
-      "technique": "Acrylique sur relief",
+      "technique": { "fr": "Acrylique sur relief", "en": "Acrylic on relief", "he": "אקריליק על תבליט" },
       "sold": false,
       "series": "jerusalem",
-      "image": "images/jerusalem-2.jpg?v=2",
-      "blurb": "Le verset du Psaume 137 s'inscrit en lettres d'or sur le pourpre. Une ville, une promesse, une fidélité qui traverse le temps."
+      "image": "images/jerusalem-2.jpg",
+      "blurb": {
+        "fr": "Le verset du Psaume 137 s'inscrit en lettres d'or sur le pourpre. Une ville, une promesse, une fidélité qui traverse le temps.",
+        "en": "The verse of Psalm 137 is inscribed in golden letters upon the purple. A city, a promise, a faithfulness that crosses time.",
+        "he": "פסוק מתהילים קל״ז חקוק באותיות זהב על הארגמן. עיר, הבטחה, נאמנות החוצה את הזמן."
+      }
     }
   ]
 }

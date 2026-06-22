@@ -1,35 +1,59 @@
 {
   "brand": "L'art by Sarah",
   "hero": {
-    "eyebrow": "Galerie de peintures",
-    "title": "L'art by Sarah-Joyeux Anniversaire !!!",
-    "subtitle": "Sarah Konopnicki — peintures abstraites",
-    "lead": "Des toiles abstraites, nées de l'instant, où la couleur, la matière et l'émotion se rencontrent librement. Une collection intime à découvrir — et, peut-être, à faire vôtre.",
-    "cta": "Découvrir la galerie",
+    "eyebrow": { "fr": "Galerie de peintures", "en": "Painting gallery", "he": "גלריית ציורים" },
+    "title": "L'art by Sarah",
+    "subtitle": {
+      "fr": "Sarah Konopnicki — peintures abstraites",
+      "en": "Sarah Konopnicki — abstract paintings",
+      "he": "שרה קונופניצקי — ציורים מופשטים"
+    },
+    "lead": {
+      "fr": "Des toiles abstraites, nées de l'instant, où la couleur, la matière et l'émotion se rencontrent librement. Une collection intime à découvrir — et, peut-être, à faire vôtre.",
+      "en": "Abstract canvases, born of the moment, where colour, texture and emotion meet freely. An intimate collection to discover — and, perhaps, to make your own.",
+      "he": "ציורים מופשטים, נולדים מן הרגע, שבהם הצבע, המרקם והרגש נפגשים בחופשיות. אוסף אינטימי לגלות — ואולי, לעשות לשלכם."
+    },
+    "cta": { "fr": "Découvrir la galerie", "en": "Explore the gallery", "he": "גלו את הגלריה" },
     "image": "images/eclats-de-joie.jpg"
   },
   "univers": {
-    "eyebrow": "Mon univers",
-    "text": "J'aime peindre de façon intuitive, en me laissant guider par les couleurs, les textures et les émotions du moment. Mes tableaux sont abstraits, parfois bruts parfois plus doux, mais toujours spontanés. J'aime que chacun y voie ce qu'il veut, selon son propre regard, son propre ressenti. Je vous invite à découvrir mon univers…",
-    "signature": "— Sarah",
+    "eyebrow": { "fr": "Mon univers", "en": "My world", "he": "העולם שלי" },
+    "text": {
+      "fr": "J'aime peindre de façon intuitive, en me laissant guider par les couleurs, les textures et les émotions du moment. Mes tableaux sont abstraits, parfois bruts parfois plus doux, mais toujours spontanés. J'aime que chacun y voie ce qu'il veut, selon son propre regard, son propre ressenti. Je vous invite à découvrir mon univers…",
+      "en": "I love to paint intuitively, letting myself be guided by the colours, textures and emotions of the moment. My paintings are abstract — sometimes raw, sometimes gentler, but always spontaneous. I like everyone to see in them what they wish, according to their own gaze, their own feeling. I invite you to discover my world…",
+      "he": "אני אוהבת לצייר באופן אינטואיטיבי, ומניחה לעצמי להיות מונחית על ידי הצבעים, המרקמים והרגשות של הרגע. הציורים שלי מופשטים — לעיתים גולמיים, לעיתים רכים יותר, אך תמיד ספונטניים. אני אוהבת שכל אחד יראה בהם את שלו, לפי מבטו, לפי תחושתו. אני מזמינה אתכם לגלות את עולמי…"
+    },
+    "signature": { "fr": "— Sarah", "en": "— Sarah", "he": "— שרה" },
     "image": "images/a-la-lisiere-du-calme.jpg"
   },
   "galerie": {
-    "eyebrow": "La galerie",
-    "title": "Les œuvres",
-    "intro": "Chaque toile est une pièce unique. Prix sur demande pour l'ensemble des œuvres."
+    "eyebrow": { "fr": "La galerie", "en": "The gallery", "he": "הגלריה" },
+    "title": { "fr": "Les œuvres", "en": "The works", "he": "היצירות" },
+    "intro": {
+      "fr": "Chaque toile est une pièce unique. Prix sur demande pour l'ensemble des œuvres.",
+      "en": "Each canvas is a unique piece. Price on request for all works.",
+      "he": "כל ציור הוא יצירה ייחודית. המחיר לכל היצירות יימסר לפי בקשה."
+    }
   },
   "seriesSection": {
-    "eyebrow": "Les séries",
-    "title": "Récits en peinture"
+    "eyebrow": { "fr": "Les séries", "en": "The series", "he": "הסדרות" },
+    "title": { "fr": "Récits en peinture", "en": "Stories in paint", "he": "סיפורים בצבע" }
   },
   "contact": {
-    "eyebrow": "Contact",
-    "title": "Échangeons",
-    "text": "Une œuvre vous touche, vous souhaitez connaître un prix ou simplement échanger ? Écrivez-moi — je réponds avec plaisir."
+    "eyebrow": { "fr": "Contact", "en": "Contact", "he": "צור קשר" },
+    "title": { "fr": "Échangeons", "en": "Let's talk", "he": "בואו נדבר" },
+    "text": {
+      "fr": "Une œuvre vous touche, vous souhaitez connaître un prix ou simplement échanger ? Écrivez-moi — je réponds avec plaisir.",
+      "en": "A work speaks to you, you'd like to know a price, or simply to chat? Write to me — I'll be glad to reply.",
+      "he": "יצירה נוגעת בכם, תרצו לדעת מחיר, או פשוט לשוחח? כתבו לי — אשמח להשיב."
+    }
   },
   "footer": {
-    "note": "De nouvelles créations viendront bientôt enrichir cette collection."
+    "note": {
+      "fr": "De nouvelles créations viendront bientôt enrichir cette collection.",
+      "en": "New creations will soon enrich this collection.",
+      "he": "יצירות חדשות יעשירו בקרוב את האוסף הזה."
+    }
   },
   "social": {
     "instagram": "lart_bysarah",

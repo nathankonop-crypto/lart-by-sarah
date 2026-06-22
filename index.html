@@ -16,13 +16,14 @@
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='10' fill='%232B2722'/%3E%3Ctext x='32' y='44' font-family='Georgia,serif' font-size='38' fill='%23C9A55F' text-anchor='middle'%3ES%3C/text%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Mulish:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Mulish:wght@300;400;500;600;700&family=Frank+Ruhl+Libre:wght@300;400;500;700&display=swap" rel="stylesheet">
 <style>
   :root{
     --bg:#F5F0E6; --bg2:#EEE6D6; --ink:#2B2722; --muted:#6A6052; --muted2:#574F44;
     --soft:#83796A; --gold:#B08A4F; --gold2:#C9A55F; --terra:#BC7C5B;
     --dark:#211D18; --dark2:#26211A; --dark3:#1D1914; --cream:#EFE7D6; --cream2:#F3ECDC;
-    --serif:'Cormorant Garamond',Georgia,serif; --sans:'Mulish',system-ui,sans-serif;
+    --serif:'Cormorant Garamond','Frank Ruhl Libre',Georgia,serif;
+    --sans:'Mulish','Frank Ruhl Libre',system-ui,sans-serif;
   }
   *{box-sizing:border-box;margin:0;padding:0}
   html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
@@ -43,6 +44,10 @@
   header nav{display:flex;flex-wrap:wrap;justify-content:center;gap:8px 26px;margin-top:7px}
   header nav a{text-decoration:none;color:var(--muted);font-size:11.5px;font-weight:500;letter-spacing:0.22em;text-transform:uppercase;transition:color .2s}
   header nav a:hover{color:var(--gold)}
+  .langsw{display:flex;justify-content:center;gap:12px;margin-top:10px}
+  .langsw button{background:none;border:none;cursor:pointer;font-family:inherit;font-size:11px;letter-spacing:0.12em;text-transform:uppercase;color:var(--soft);padding:2px 2px;border-bottom:1px solid transparent;transition:color .2s,border-color .2s}
+  .langsw button:hover{color:var(--ink)}
+  .langsw button.active{color:var(--ink);font-weight:500;border-bottom-color:var(--gold)}
   #accueil .row{display:flex;flex-wrap:wrap;align-items:center;gap:clamp(32px,5vw,72px)}
   #accueil h1{font-family:var(--serif);font-weight:500;font-size:clamp(3rem,8.5vw,5.6rem);line-height:0.98;letter-spacing:-0.01em;margin:22px 0 18px}
   #accueil .sub{font-family:var(--serif);font-style:italic;font-size:clamp(1.25rem,2.6vw,1.7rem);color:#8A7F6E;margin-bottom:30px}
@@ -120,6 +125,9 @@
   .lb-prev{left:clamp(8px,2vw,26px)} .lb-next{right:clamp(8px,2vw,26px)}
   .lb-x:hover,.lb-nav:hover{background:var(--gold2);color:var(--dark);border-color:var(--gold2)}
   @media(max-width:560px){.lb-nav{display:none}}
+  [dir="rtl"] .eyebrow,[dir="rtl"] header nav a,[dir="rtl"] .langsw button,[dir="rtl"] .btn,[dir="rtl"] .btn-ghost,[dir="rtl"] .btn-ghost-d,[dir="rtl"] .badge-sold,[dir="rtl"] .badge-zoom,[dir="rtl"] .contact-links .lbl,[dir="rtl"] form .flabel,[dir="rtl"] .lb-info .meta,[dir="rtl"] footer .copy{letter-spacing:normal}
+  [dir="rtl"] .badge-sold{left:auto;right:14px}
+  [dir="rtl"] .badge-zoom{right:auto;left:12px}
 </style>
 </head>
 <body>
@@ -127,14 +135,19 @@
 <header>
   <a href="#accueil" class="brand" id="brand-top">L'art by Sarah</a>
   <nav>
-    <a href="#univers">Mon univers</a>
-    <a href="#galerie">Galerie</a>
-    <a href="#series">Les séries</a>
-    <a href="#contact">Contact</a>
+    <a href="#univers" id="nav-univers">Mon univers</a>
+    <a href="#galerie" id="nav-galerie">Galerie</a>
+    <a href="#series" id="nav-series">Les séries</a>
+    <a href="#contact" id="nav-contact">Contact</a>
   </nav>
+  <div class="langsw" id="langsw">
+    <button data-lang="fr">FR</button>
+    <button data-lang="en">EN</button>
+    <button data-lang="he">עברית</button>
+  </div>
 </header>
 
-<section id="accueil" class="wrap" style="scroll-margin-top:120px">
+<section id="accueil" class="wrap" style="scroll-margin-top:140px">
   <div class="row">
     <div style="flex:1 1 340px;min-width:300px">
       <p class="eyebrow" id="hero-eyebrow"></p>
@@ -191,23 +204,23 @@
       <p style="color:var(--muted2);font-size:1.05rem;max-width:30em;margin-bottom:36px" id="contact-text"></p>
       <div class="contact-links">
         <a id="ct-instagram" href="#" target="_blank" rel="noopener">
-          <span class="ic">◎</span><span><span class="lbl">Instagram</span><span style="font-size:1.05rem" id="ct-instagram-h"></span></span>
+          <span class="ic">◎</span><span><span class="lbl" id="lbl-ig">Instagram</span><span style="font-size:1.05rem" id="ct-instagram-h"></span></span>
         </a>
         <a id="ct-phone" href="#">
-          <span class="ic">☏</span><span><span class="lbl">Téléphone</span><span style="font-size:1.05rem" id="ct-phone-h"></span></span>
+          <span class="ic">☏</span><span><span class="lbl" id="lbl-ph">Téléphone</span><span style="font-size:1.05rem" id="ct-phone-h"></span></span>
         </a>
         <a id="ct-wa" href="#" target="_blank" rel="noopener">
-          <span class="ic" style="color:#5E8A5C">✆</span><span><span class="lbl">WhatsApp</span><span style="font-size:1.05rem">Discuter en direct</span></span>
+          <span class="ic" style="color:#5E8A5C">✆</span><span><span class="lbl" id="lbl-wa">WhatsApp</span><span style="font-size:1.05rem" id="wa-live"></span></span>
         </a>
       </div>
     </div>
     <div style="flex:1 1 360px;min-width:300px">
       <form id="contact-form">
-        <label><span class="flabel">Votre nom</span><input type="text" id="f-nom" placeholder="Prénom et nom"></label>
-        <label><span class="flabel">Votre email</span><input type="email" id="f-email" placeholder="vous@exemple.fr"></label>
-        <label><span class="flabel">Votre message</span><textarea id="f-msg" rows="4" placeholder="Votre message…"></textarea></label>
-        <button type="submit" class="btn" style="width:100%;padding:17px">Envoyer le message</button>
-        <p class="form-note">L'envoi vous redirige vers WhatsApp pour une réponse plus rapide.</p>
+        <label><span class="flabel" id="lab-nom"></span><input type="text" id="f-nom"></label>
+        <label><span class="flabel" id="lab-email"></span><input type="email" id="f-email"></label>
+        <label><span class="flabel" id="lab-msg"></span><textarea id="f-msg" rows="4"></textarea></label>
+        <button type="submit" class="btn" style="width:100%;padding:17px" id="btn-send"></button>
+        <p class="form-note" id="form-note"></p>
       </form>
     </div>
   </div>
@@ -217,44 +230,80 @@
   <p class="fbrand" id="foot-brand">L'art by Sarah</p>
   <p class="fline" id="foot-line"></p>
   <p class="fnote" id="foot-note"></p>
-  <p class="copy">© 2026 L'art by Sarah — Tous droits réservés</p>
+  <p class="copy" id="foot-copy"></p>
 </footer>
 
-<div class="lb" id="lb" role="dialog" aria-modal="true" aria-label="Œuvre agrandie">
-  <button class="lb-x" id="lb-x" aria-label="Fermer">✕</button>
-  <button class="lb-nav lb-prev" id="lb-prev" aria-label="Œuvre précédente">‹</button>
-  <button class="lb-nav lb-next" id="lb-next" aria-label="Œuvre suivante">›</button>
+<div class="lb" id="lb" role="dialog" aria-modal="true">
+  <button class="lb-x" id="lb-x">✕</button>
+  <button class="lb-nav lb-prev" id="lb-prev">‹</button>
+  <button class="lb-nav lb-next" id="lb-next">›</button>
   <div class="lb-inner">
     <div class="lb-imgwrap"><img id="lb-img" src="" alt=""></div>
     <div class="lb-info">
-      <span class="badge-sold" id="lb-sold" style="display:none">Vendu</span>
+      <span class="badge-sold" id="lb-sold" style="display:none"></span>
       <h3 id="lb-title"></h3>
       <p class="meta" id="lb-meta"></p>
       <p class="blurb serif" id="lb-blurb"></p>
-      <button class="lb-btn" id="lb-ask">Demander le prix</button>
+      <button class="lb-btn" id="lb-ask"></button>
     </div>
   </div>
 </div>
 
 <script>
-let WA = '33767104816';
-let WORKS = [];
+const LANGS = ['fr','en','he'];
+const UI = {
+  nav_univers:{fr:'Mon univers',en:'My world',he:'העולם שלי'},
+  nav_galerie:{fr:'Galerie',en:'Gallery',he:'גלריה'},
+  nav_series:{fr:'Les séries',en:'The series',he:'הסדרות'},
+  nav_contact:{fr:'Contact',en:'Contact',he:'צור קשר'},
+  ask:{fr:'Demander le prix',en:'Request price',he:'לבירור מחיר'},
+  enlarge:{fr:'Agrandir',en:'Enlarge',he:'הגדלה'},
+  sold:{fr:'Vendu',en:'Sold',he:'נמכר'},
+  f_name:{fr:'Votre nom',en:'Your name',he:'השם שלכם'},
+  f_email:{fr:'Votre email',en:'Your email',he:'האימייל שלכם'},
+  f_msg:{fr:'Votre message',en:'Your message',he:'ההודעה שלכם'},
+  f_send:{fr:'Envoyer le message',en:'Send message',he:'שליחת הודעה'},
+  ph_name:{fr:'Prénom et nom',en:'First and last name',he:'שם פרטי ומשפחה'},
+  ph_email:{fr:'vous@exemple.fr',en:'you@example.com',he:'you@example.com'},
+  ph_msg:{fr:'Votre message…',en:'Your message…',he:'ההודעה שלכם…'},
+  f_note:{fr:"L'envoi vous redirige vers WhatsApp pour une réponse plus rapide.",en:'Sending redirects you to WhatsApp for a quicker reply.',he:'השליחה מפנה אתכם לוואטסאפ לתשובה מהירה יותר.'},
+  l_ig:{fr:'Instagram',en:'Instagram',he:'אינסטגרם'},
+  l_ph:{fr:'Téléphone',en:'Phone',he:'טלפון'},
+  l_wa:{fr:'WhatsApp',en:'WhatsApp',he:'וואטסאפ'},
+  wa_live:{fr:'Discuter en direct',en:'Chat live',he:'שיחה ישירה'},
+  rights:{fr:'Tous droits réservés',en:'All rights reserved',he:'כל הזכויות שמורות'},
+  ask_msg:{fr:'Bonjour Sarah, je serais intéressé(e) par « {t} ». Pourriez-vous m\'indiquer son prix et sa disponibilité ?',en:'Hello Sarah, I am interested in “{t}”. Could you let me know its price and availability?',he:'שלום שרה, אני מתעניין/ת ב“{t}”. תוכלי לומר לי מה המחיר והזמינות?'},
+  wa_greet:{fr:'Bonjour Sarah,',en:'Hello Sarah,',he:'שלום שרה,'},
+  wa_default:{fr:'Je vous écris au sujet de vos toiles.',en:'I am writing to you about your paintings.',he:'אני כותב/ת לך בנוגע לציורים שלך.'},
+  yourname:{fr:'(votre nom)',en:'(your name)',he:'(השם שלכם)'},
+  close:{fr:'Fermer',en:'Close',he:'סגירה'},
+  prev:{fr:'Œuvre précédente',en:'Previous work',he:'יצירה קודמת'},
+  next:{fr:'Œuvre suivante',en:'Next work',he:'יצירה הבאה'},
+  zoom:{fr:'Agrandir',en:'Zoom',he:'הגדלה'}
+};
+
+let lang = localStorage.getItem('lang');
+if(!LANGS.includes(lang)){ const n=(navigator.language||'fr').slice(0,2).toLowerCase(); lang = LANGS.includes(n)?n:'fr'; }
+
+let CONTENT=null, SERIES=[], WORKS=[];
 const esc = s => String(s==null?'':s).replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
-const setText = (id,v) => { const e=document.getElementById(id); if(e&&v!=null) e.textContent=v; };
+const t = v => { if(v==null) return ''; if(typeof v==='string') return v; const x=v[lang]; return (x && String(x).trim()) ? x : (v.fr||''); };
+const u = k => t(UI[k]);
+const setText = (id,v) => { const e=document.getElementById(id); if(e) e.textContent=v; };
 const setImg = (id,v) => { const e=document.getElementById(id); if(e&&v) e.src=v; };
 
 function cardHTML(w, i, dark){
-  const sold = w.sold ? `<span class="badge-sold">Vendu</span>` : '';
+  const sold = w.sold ? `<span class="badge-sold">${esc(u('sold'))}</span>` : '';
   const askCls = dark ? 'btn-ghost-d' : 'btn-ghost ask';
   return `<figure>
     <div class="card-img" onclick="openLb(${i})">
-      <img src="${esc(w.image)}" alt="${esc(w.title)}" loading="lazy">
-      ${sold}<span class="badge-zoom">Agrandir ⤢</span>
+      <img src="${esc(w.image)}" alt="${esc(t(w.title))}" loading="lazy">
+      ${sold}<span class="badge-zoom">${esc(u('enlarge'))} ⤢</span>
     </div>
     <figcaption>
-      <h3>${esc(w.title)}</h3>
-      <p class="meta">${esc(w.dims)} · ${esc(w.technique)}</p>
-      <button class="${askCls}" onclick="askPrice('${esc(w.title).replace(/'/g,"\\'")}')">Demander le prix</button>
+      <h3>${esc(t(w.title))}</h3>
+      <p class="meta">${esc(w.dims)} · ${esc(t(w.technique))}</p>
+      <button class="${askCls}" onclick="askPrice(${i})">${esc(u('ask'))}</button>
     </figcaption>
   </figure>`;
 }
@@ -262,9 +311,9 @@ function cardHTML(w, i, dark){
 function renderGallery(){
   document.getElementById('galerie-grid').innerHTML = WORKS.map((w,i)=>cardHTML(w,i,false)).join('');
 }
-function renderSeries(seriesList){
+function renderSeries(){
   const cont = document.getElementById('series-container');
-  const ordered = seriesList.slice().sort((a,b)=>(a.order||0)-(b.order||0));
+  const ordered = SERIES.slice().sort((a,b)=>(a.order||0)-(b.order||0));
   cont.innerHTML = ordered.filter(s=>WORKS.some(w=>w.series===s.id)).map((s,idx)=>{
     const items = WORKS.map((w,i)=>({w,i})).filter(o=>o.w.series===s.id);
     const cards = items.map(o=>cardHTML(o.w,o.i,true)).join('');
@@ -272,9 +321,9 @@ function renderSeries(seriesList){
     return `<div class="serie ${alt}"><div class="inner"><div class="serie-art">
       <div class="serie-text">
         <span class="heb ${s.rtl?'rtl':''}">${esc(s.heb)}</span>
-        <h3>${esc(s.title)}</h3>
-        <p class="serie-sub">${esc(s.sub)}</p>
-        <p class="serie-intro">${esc(s.intro)}</p>
+        <h3>${esc(t(s.title))}</h3>
+        <p class="serie-sub">${esc(t(s.sub))}</p>
+        <p class="serie-intro">${esc(t(s.intro))}</p>
       </div>
       <div class="serie-grid">${cards}</div>
     </div></div></div>`;
@@ -284,26 +333,63 @@ function renderSeries(seriesList){
 let lbIdx = -1;
 function openLb(i){
   lbIdx = i; const w = WORKS[i];
-  setImg('lb-img', w.image); document.getElementById('lb-img').alt = w.title;
-  setText('lb-title', w.title);
-  setText('lb-meta', w.dims + ' · ' + w.technique);
-  setText('lb-blurb', w.blurb || '');
-  document.getElementById('lb-sold').style.display = w.sold ? 'inline-block' : 'none';
+  setImg('lb-img', w.image); document.getElementById('lb-img').alt = t(w.title);
+  setText('lb-title', t(w.title));
+  setText('lb-meta', w.dims + ' · ' + t(w.technique));
+  setText('lb-blurb', t(w.blurb));
+  const sd=document.getElementById('lb-sold'); sd.textContent=u('sold'); sd.style.display = w.sold ? 'inline-block' : 'none';
+  setText('lb-ask', u('ask'));
   document.getElementById('lb').classList.add('open');
   document.body.style.overflow = 'hidden';
 }
 function closeLb(){ document.getElementById('lb').classList.remove('open'); document.body.style.overflow=''; lbIdx=-1; }
 function stepLb(n){ if(lbIdx<0)return; openLb((lbIdx+n+WORKS.length)%WORKS.length); }
-function askPrice(title){
-  document.getElementById('f-msg').value = `Bonjour Sarah, je serais intéressé(e) par « ${title} ». Pourriez-vous m'indiquer son prix et sa disponibilité ?`;
+function askPrice(i){
+  const title = t(WORKS[i].title);
+  document.getElementById('f-msg').value = u('ask_msg').replace('{t}', title);
   closeLb(); location.hash = '#contact';
 }
 
+let WA='33767104816';
+function applyAll(){
+  document.documentElement.lang = lang;
+  document.documentElement.dir = (lang==='he') ? 'rtl' : 'ltr';
+  Array.from(document.querySelectorAll('#langsw button')).forEach(b=>b.classList.toggle('active', b.dataset.lang===lang));
+  if(CONTENT){
+    setText('brand-top', CONTENT.brand); setText('foot-brand', CONTENT.brand);
+    const h=CONTENT.hero||{}; setText('hero-eyebrow',t(h.eyebrow)); setText('hero-title',t(h.title)); setText('hero-sub',t(h.subtitle)); setText('hero-lead',t(h.lead)); setText('hero-cta',t(h.cta)); setImg('hero-img',h.image);
+    const un=CONTENT.univers||{}; setText('univers-eyebrow',t(un.eyebrow)); setText('univers-text',t(un.text)); setText('univers-sign',t(un.signature)); setImg('univers-img',un.image);
+    const g=CONTENT.galerie||{}; setText('gal-eyebrow',t(g.eyebrow)); setText('gal-title',t(g.title)); setText('gal-intro',t(g.intro));
+    const ss=CONTENT.seriesSection||{}; setText('series-eyebrow',t(ss.eyebrow)); setText('series-title',t(ss.title));
+    const c=CONTENT.contact||{}; setText('contact-eyebrow',t(c.eyebrow)); setText('contact-title',t(c.title)); setText('contact-text',t(c.text));
+    setText('foot-note', t((CONTENT.footer||{}).note));
+    const s=CONTENT.social||{}; WA=(s.whatsapp||WA).replace(/\D/g,'');
+    const ig=document.getElementById('ct-instagram'); if(ig) ig.href='https://instagram.com/'+s.instagram; setText('ct-instagram-h','@'+(s.instagram||''));
+    const ph=document.getElementById('ct-phone'); if(ph) ph.href='tel:'+String(s.phoneIntl||'').replace(/\s/g,''); setText('ct-phone-h',s.phone);
+    const wa=document.getElementById('ct-wa'); if(wa) wa.href='https://wa.me/'+WA;
+    const fl=document.getElementById('foot-line'); if(fl) fl.innerHTML='Sarah Konopnicki · <a href="https://instagram.com/'+esc(s.instagram)+'" target="_blank" rel="noopener">@'+esc(s.instagram)+'</a>';
+  }
+  setText('nav-univers',u('nav_univers')); setText('nav-galerie',u('nav_galerie')); setText('nav-series',u('nav_series')); setText('nav-contact',u('nav_contact'));
+  setText('lbl-ig',u('l_ig')); setText('lbl-ph',u('l_ph')); setText('lbl-wa',u('l_wa')); setText('wa-live',u('wa_live'));
+  setText('lab-nom',u('f_name')); setText('lab-email',u('f_email')); setText('lab-msg',u('f_msg'));
+  document.getElementById('f-nom').placeholder=u('ph_name'); document.getElementById('f-email').placeholder=u('ph_email'); document.getElementById('f-msg').placeholder=u('ph_msg');
+  setText('btn-send',u('f_send')); setText('form-note',u('f_note'));
+  setText('foot-copy','© 2026 L\'art by Sarah — '+u('rights'));
+  document.getElementById('lb-x').setAttribute('aria-label',u('close'));
+  document.getElementById('lb-prev').setAttribute('aria-label',u('prev'));
+  document.getElementById('lb-next').setAttribute('aria-label',u('next'));
+  renderGallery();
+  renderSeries();
+  if(lbIdx>=0) openLb(lbIdx);
+}
+function setLang(l){ if(!LANGS.includes(l))return; lang=l; localStorage.setItem('lang',l); applyAll(); }
+
+document.getElementById('langsw').addEventListener('click', e=>{ const b=e.target.closest('button'); if(b) setLang(b.dataset.lang); });
 document.getElementById('lb').addEventListener('click', e => { if(e.target.id==='lb') closeLb(); });
 document.getElementById('lb-x').onclick = closeLb;
 document.getElementById('lb-prev').onclick = ()=>stepLb(-1);
 document.getElementById('lb-next').onclick = ()=>stepLb(1);
-document.getElementById('lb-ask').onclick = ()=>{ if(lbIdx>=0) askPrice(WORKS[lbIdx].title); };
+document.getElementById('lb-ask').onclick = ()=>{ if(lbIdx>=0) askPrice(lbIdx); };
 document.addEventListener('keydown', e => {
   if(!document.getElementById('lb').classList.contains('open'))return;
   if(e.key==='Escape')closeLb(); else if(e.key==='ArrowRight')stepLb(1); else if(e.key==='ArrowLeft')stepLb(-1);
@@ -312,38 +398,20 @@ document.getElementById('contact-form').addEventListener('submit', e => {
   e.preventDefault();
   const nom = document.getElementById('f-nom').value.trim();
   const email = document.getElementById('f-email').value.trim();
-  const body = document.getElementById('f-msg').value.trim() || 'Je vous écris au sujet de vos toiles.';
-  const sig = '\n\n— ' + (nom||'(votre nom)') + (email?' · '+email:'');
-  window.open('https://wa.me/'+WA+'?text='+encodeURIComponent('Bonjour Sarah,\n\n'+body+sig), '_blank');
+  const body = document.getElementById('f-msg').value.trim() || u('wa_default');
+  const sig = '\n\n— ' + (nom||u('yourname')) + (email?' · '+email:'');
+  window.open('https://wa.me/'+WA+'?text='+encodeURIComponent(u('wa_greet')+'\n\n'+body+sig), '_blank');
 });
-
-function applyContent(c){
-  if(!c) return;
-  setText('brand-top', c.brand); setText('foot-brand', c.brand);
-  if(c.hero){ setText('hero-eyebrow',c.hero.eyebrow); setText('hero-title',c.hero.title); setText('hero-sub',c.hero.subtitle); setText('hero-lead',c.hero.lead); setText('hero-cta',c.hero.cta); setImg('hero-img',c.hero.image); }
-  if(c.univers){ setText('univers-eyebrow',c.univers.eyebrow); setText('univers-text',c.univers.text); setText('univers-sign',c.univers.signature); setImg('univers-img',c.univers.image); }
-  if(c.galerie){ setText('gal-eyebrow',c.galerie.eyebrow); setText('gal-title',c.galerie.title); setText('gal-intro',c.galerie.intro); }
-  if(c.seriesSection){ setText('series-eyebrow',c.seriesSection.eyebrow); setText('series-title',c.seriesSection.title); }
-  if(c.contact){ setText('contact-eyebrow',c.contact.eyebrow); setText('contact-title',c.contact.title); setText('contact-text',c.contact.text); }
-  if(c.footer){ setText('foot-note',c.footer.note); }
-  if(c.social){
-    const s=c.social; WA=(s.whatsapp||WA).replace(/\D/g,'');
-    const ig=document.getElementById('ct-instagram'); if(ig){ig.href='https://instagram.com/'+s.instagram;} setText('ct-instagram-h','@'+s.instagram);
-    const ph=document.getElementById('ct-phone'); if(ph){ph.href='tel:'+(s.phoneIntl||'').replace(/\s/g,'');} setText('ct-phone-h',s.phone);
-    const wa=document.getElementById('ct-wa'); if(wa){wa.href='https://wa.me/'+WA;}
-    const fl=document.getElementById('foot-line'); if(fl){fl.innerHTML='Sarah Konopnicki · <a href="https://instagram.com/'+esc(s.instagram)+'" target="_blank" rel="noopener">@'+esc(s.instagram)+'</a>';}
-  }
-}
 
 Promise.all([
   fetch('content.json').then(r=>r.json()).catch(()=>null),
   fetch('series.json').then(r=>r.json()).catch(()=>({series:[]})),
   fetch('works.json').then(r=>r.json()).catch(()=>({works:[]}))
 ]).then(([content, seriesData, worksData])=>{
-  applyContent(content);
+  CONTENT = content;
+  SERIES = (seriesData && seriesData.series) || [];
   WORKS = (worksData && worksData.works) || [];
-  renderGallery();
-  renderSeries((seriesData && seriesData.series) || []);
+  applyAll();
 }).catch(()=>{
   document.getElementById('galerie-grid').innerHTML='<p style="grid-column:1/-1;text-align:center;color:var(--muted)">Le site se charge une fois en ligne.</p>';
 });
