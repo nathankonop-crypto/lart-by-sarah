@@ -1,0 +1,166 @@
+backend:
+  name: github
+  repo: nathankonop-crypto/lart-by-sarah
+  branch: main
+
+media_folder: "images"
+public_folder: "images"
+
+locale: "fr"
+
+collections:
+  - name: "toiles"
+    label: "Toiles"
+    description: "Ajouter, modifier ou retirer une toile de la galerie."
+    files:
+      - name: "works"
+        label: "Galerie — toutes les toiles"
+        file: "works.json"
+        description: "Cliquez sur « + » pour ajouter une toile, ou sur la corbeille pour en retirer une."
+        fields:
+          - name: "works"
+            label: "Toiles"
+            label_singular: "Toile"
+            widget: "list"
+            summary: "{{fields.title}}"
+            fields:
+              - name: "title"
+                label: "Titre"
+                widget: "string"
+              - name: "image"
+                label: "Photo de la toile"
+                widget: "image"
+              - name: "dims"
+                label: "Dimensions (ex : 60 × 50 cm)"
+                widget: "string"
+              - name: "technique"
+                label: "Technique"
+                widget: "string"
+              - name: "sold"
+                label: "Vendue (affiche le badge « Vendu »)"
+                widget: "boolean"
+                default: false
+              - name: "series"
+                label: "Série"
+                widget: "relation"
+                required: false
+                collection: "series"
+                file: "series"
+                value_field: "series.*.id"
+                search_fields: ["series.*.title"]
+                display_fields: ["series.*.title"]
+                hint: "Laissez vide si la toile n'appartient à aucune série."
+              - name: "blurb"
+                label: "Description (texte affiché en grand quand on agrandit la toile)"
+                widget: "text"
+                required: false
+              - name: "id"
+                label: "Identifiant technique (ne pas modifier)"
+                widget: "string"
+                required: false
+
+  - name: "series"
+    label: "Séries"
+    description: "Créer, modifier ou supprimer une série (Haï, Racine & Résilience…)."
+    files:
+      - name: "series"
+        label: "Toutes les séries"
+        file: "series.json"
+        fields:
+          - name: "series"
+            label: "Séries"
+            label_singular: "Série"
+            widget: "list"
+            summary: "{{fields.title}}"
+            fields:
+              - name: "id"
+                label: "Identifiant (sans espaces ni accents, ex : hai)"
+                widget: "string"
+                hint: "Doit correspondre à la série choisie sur les toiles."
+              - name: "order"
+                label: "Ordre d'affichage (1 = en premier)"
+                widget: "number"
+                value_type: "int"
+                default: 1
+              - name: "title"
+                label: "Titre de la série"
+                widget: "string"
+              - name: "heb"
+                label: "Texte hébreu ou symbole (optionnel)"
+                widget: "string"
+                required: false
+              - name: "rtl"
+                label: "Texte hébreu écrit de droite à gauche"
+                widget: "boolean"
+                default: false
+              - name: "sub"
+                label: "Sous-titre"
+                widget: "string"
+                required: false
+              - name: "intro"
+                label: "Texte de présentation de la série"
+                widget: "text"
+                required: false
+
+  - name: "site"
+    label: "Textes du site"
+    description: "Modifier les textes affichés (accueil, mon univers, contact, pied de page)."
+    files:
+      - name: "content"
+        label: "Contenu général"
+        file: "content.json"
+        fields:
+          - name: "brand"
+            label: "Nom affiché (marque)"
+            widget: "string"
+          - name: "hero"
+            label: "Accueil (haut de page)"
+            widget: "object"
+            fields:
+              - { name: "eyebrow", label: "Petit titre au-dessus", widget: "string" }
+              - { name: "title", label: "Grand titre", widget: "string" }
+              - { name: "subtitle", label: "Sous-titre", widget: "string" }
+              - { name: "lead", label: "Texte d'introduction", widget: "text" }
+              - { name: "cta", label: "Texte du bouton", widget: "string" }
+              - { name: "image", label: "Photo d'accueil", widget: "image" }
+          - name: "univers"
+            label: "Mon univers"
+            widget: "object"
+            fields:
+              - { name: "eyebrow", label: "Petit titre", widget: "string" }
+              - { name: "text", label: "Texte", widget: "text" }
+              - { name: "signature", label: "Signature", widget: "string" }
+              - { name: "image", label: "Photo", widget: "image" }
+          - name: "galerie"
+            label: "Galerie (en-tête)"
+            widget: "object"
+            fields:
+              - { name: "eyebrow", label: "Petit titre", widget: "string" }
+              - { name: "title", label: "Titre", widget: "string" }
+              - { name: "intro", label: "Texte d'introduction", widget: "string" }
+          - name: "seriesSection"
+            label: "Séries (en-tête de la section)"
+            widget: "object"
+            fields:
+              - { name: "eyebrow", label: "Petit titre", widget: "string" }
+              - { name: "title", label: "Titre", widget: "string" }
+          - name: "contact"
+            label: "Contact"
+            widget: "object"
+            fields:
+              - { name: "eyebrow", label: "Petit titre", widget: "string" }
+              - { name: "title", label: "Titre", widget: "string" }
+              - { name: "text", label: "Texte", widget: "text" }
+          - name: "footer"
+            label: "Pied de page"
+            widget: "object"
+            fields:
+              - { name: "note", label: "Phrase de bas de page", widget: "text" }
+          - name: "social"
+            label: "Coordonnées"
+            widget: "object"
+            fields:
+              - { name: "instagram", label: "Instagram (sans le @)", widget: "string" }
+              - { name: "phone", label: "Téléphone (tel qu'affiché)", widget: "string" }
+              - { name: "phoneIntl", label: "Téléphone format international (ex : +33767104816)", widget: "string" }
+              - { name: "whatsapp", label: "WhatsApp (chiffres uniquement, ex : 33767104816)", widget: "string" }
