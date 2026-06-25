@@ -303,7 +303,7 @@ function cardHTML(w, i, dark){
     <figcaption>
       <h3>${esc(t(w.title))}</h3>
       <p class="meta">${esc(w.dims)} · ${esc(t(w.technique))}</p>
-      <button class="${askCls}" onclick="askPrice(${i})">${esc(u('ask'))}</button>
+      ${w.sold ? '' : `<button class="${askCls}" onclick="askPrice(${i})">${esc(u('ask'))}</button>`}
     </figcaption>
   </figure>`;
 }
@@ -339,6 +339,7 @@ function openLb(i){
   setText('lb-blurb', t(w.blurb));
   const sd=document.getElementById('lb-sold'); sd.textContent=u('sold'); sd.style.display = w.sold ? 'inline-block' : 'none';
   setText('lb-ask', u('ask'));
+  document.getElementById('lb-ask').style.display = w.sold ? 'none' : 'inline-block';
   document.getElementById('lb').classList.add('open');
   document.body.style.overflow = 'hidden';
 }
