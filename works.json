@@ -46,6 +46,28 @@
     },
     {
       "title": {
+        "fr": "Au milieu, la lumière",
+        "en": "In the Midst, the Light",
+        "he": "במרכז, האור"
+      },
+      "image": "images/au-milieu-la-lumiere.jpg",
+      "dims": "81 × 54 cm",
+      "technique": {
+        "fr": "Acrylique",
+        "en": "Acrylic",
+        "he": "אקריליק"
+      },
+      "sold": false,
+      "series": "",
+      "blurb": {
+        "fr": "Au cœur de l'ombre, une ligne d'or trace l'horizon. Rappel que même dans le tumulte, la lumière trouve toujours son chemin.",
+        "en": "At the heart of the shadow, a line of gold traces the horizon. A reminder that even in turmoil, light always finds its way.",
+        "he": "בלב הצל, קו של זהב משרטט את האופק. תזכורת שגם במהומה, האור תמיד מוצא את דרכו."
+      },
+      "id": "au-milieu-la-lumiere"
+    },
+    {
+      "title": {
         "fr": "Entre deux pulsations",
         "en": "Between Two Heartbeats",
         "he": "בין שתי פעימות"
@@ -87,28 +109,6 @@
         "he": "על סף ההשתקטות, הירוק והזהב נושקים זה לזה. בד-נוף שבו מתעכבים, רגע לפני הדממה."
       },
       "id": "a-la-lisiere-du-calme"
-    },
-    {
-      "title": {
-        "fr": "Au milieu, la lumière",
-        "en": "In the Midst, the Light",
-        "he": "במרכז, האור"
-      },
-      "image": "images/au-milieu-la-lumiere.jpg",
-      "dims": "81 × 54 cm",
-      "technique": {
-        "fr": "Acrylique",
-        "en": "Acrylic",
-        "he": "אקריליק"
-      },
-      "sold": false,
-      "series": "",
-      "blurb": {
-        "fr": "Au cœur de l'ombre, une ligne d'or trace l'horizon. Rappel que même dans le tumulte, la lumière trouve toujours son chemin.",
-        "en": "At the heart of the shadow, a line of gold traces the horizon. A reminder that even in turmoil, light always finds its way.",
-        "he": "בלב הצל, קו של זהב משרטט את האופק. תזכורת שגם במהומה, האור תמיד מוצא את דרכו."
-      },
-      "id": "au-milieu-la-lumiere"
     },
     {
       "title": {
@@ -358,7 +358,7 @@
         "en": "",
         "he": "אם אשכחך ירושלים מס'3"
       },
-      "image": "/images/4E504E07-DA73-4207-9609-72E6C4DE4D58.PNG",
+      "image": "/images/jerusalem-3.jpg",
       "dims": "9 x 20 x 20",
       "technique": {
         "fr": "Acrylique et relief en pochoir",
