@@ -351,6 +351,28 @@
         "he": "פסוק מתהילים קל״ז חקוק באותיות זהב על הארגמן. עיר, הבטחה, נאמנות החוצה את הזמן."
       },
       "id": "jerusalem-2"
+    },
+    {
+      "title": {
+        "fr": "Si je t'oublie Jerusalem n°3",
+        "en": "",
+        "he": "אם אשכחך ירושלים מס'3"
+      },
+      "image": "/images/4E504E07-DA73-4207-9609-72E6C4DE4D58.PNG",
+      "dims": "9 x 20 x 20",
+      "technique": {
+        "fr": "Acrylique et relief en pochoir",
+        "en": "",
+        "he": ""
+      },
+      "sold": false,
+      "series": "jerusalem",
+      "blurb": {
+        "fr": "Neuf panneaux dressés comme les pierres du Mur des Lamentations, où le verset du Psaume 137 — « Si je t'oublie, Jérusalem… » — s'inscrit en lettres d'or, telle une prière glissée entre les pierres. Terre, pierre et or se répondent ; chaque interstice devient une supplique confiée au Mur, chaque fragment, une mémoire qui ne s'efface pas.",
+        "en": "Nine panels stand like the stones of the Western Wall, where the verse of Psalm 137 — “If I forget you, Jerusalem…” — is set in golden letters, as a prayer slipped between the stones. Earth, stone and gold answer one another; each crevice becomes a supplication entrusted to the Wall, each fragment a memory that will not fade.",
+        "he": "תשעה לוחות ניצבים כאבני הכותל המערבי, שבהם נחקק בזהב פסוק מתהילים קל״ז — „אם אשכחך ירושלים…\" — כפתק תפילה הנתחב בין האבנים. אדמה, אבן וזהב עונים זה לזה; כל סדק הופך לתחינה המופקדת בכותל, וכל שבר — לזיכרון שאינו נמחק."
+      },
+      "id": "Jerusalem-3"
     }
   ]
 }
